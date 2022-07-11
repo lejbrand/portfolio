@@ -211,6 +211,7 @@ h2{
                 transition: 0.4s;
                 opacity: 0;
                 visibility: hidden;
+                @include tablet{display: none;}
             }
             &.color::before{
                 opacity: 1;
