@@ -30,11 +30,10 @@ $(document).ready(function(){
         }else{
             $(".header .header-wrap .logo a img").attr("src","images/logo.png");
         }
-        
-        if($(".header").scss("background-color") == "#efeff6"){
-            $(".header").scss("background-color","transparent");
+        if($(".header").css("background-color") == "rgb(239, 239, 246)"){
+            $(".header").css("background-color","transparent");
         }else{
-            $(".header").scss("background-color","#efeff6");
+            $(".header").css("background-color","rgb(239, 239, 246)");
         }
     })
 
@@ -48,11 +47,11 @@ $(document).ready(function(){
         let $width = $(window).width();
 
         if($width < 640){
-            $(window).off("mousewheel DOMMouseScroll");
+            $(window).off("mousewheel DOMMouseScroll touchmove");
             $("html, body").css("overflow", "auto")//overflow 를 auto로 해주면 hidden이 풀어지게 된다.
         }else{  //아니라면 일 때 설정해둔 내용을 전부 붙여넣기 해준다.
             $("html, body").css("overflow", "hidden")
-            $(window).on("mousewheel DOMMouseScroll",function(e){
+            $(window).on("mousewheel DOMMouseScroll touchmove ",function(e){
                 let delta = e.originalEvent.wheelDelta;
                 let firefox = e.originalEvent.detail
         
@@ -87,11 +86,11 @@ $(document).ready(function(){
     // matchMedia = 사이트를 켰을때의 사이즈를 체크해준다.
     if (matchMedia("screen and (max-width: 640px)").matches) {
 
-        $(window).off("mousewheel DOMMouseScroll");
+        $(window).off("mousewheel DOMMouseScroll touchmove");
             $("html, body").css("overflow", "auto")
         } else {
             $("html, body").css("overflow", "hidden")
-            $(window).on("mousewheel DOMMouseScroll",function(e){
+            $(window).on("mousewheel DOMMouseScroll touchmove ",function(e){
                 let delta = e.originalEvent.wheelDelta;
                 let firefox = e.originalEvent.detail
         
