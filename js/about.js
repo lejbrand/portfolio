@@ -13,7 +13,23 @@ $(document).ready(function(){
         $(".hamburger a b").fadeToggle()
         $(".side").fadeToggle()
         $(".header").toggleClass("on")
+        if($(".header .header-wrap .logo a img").attr("src") == "images/logo.png"){
+            $(".header .header-wrap .logo a img").attr("src","images/logo-w.png");
+        }else{
+            $(".header .header-wrap .logo a img").attr("src","images/logo.png");
+        }
+        if($(".header").css("background-color") == "rgb(239, 239, 246)"){
+            $(".header").css("background-color","transparent");
+        }else{
+            $(".header").css("background-color","rgb(239, 239, 246)");
+        }
+
     })
+
+
+
+
+
     $(".skill .icon ul li a").click(function(e){
         e.preventDefault()
     })

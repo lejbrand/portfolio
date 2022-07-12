@@ -37,17 +37,20 @@ $(document).ready(function(){
         }
     })
 
-    
+
+
     // 모바일 스크롤 해제
-
-
-
     //resize=  사이즈를 줄일떄를 체크해서 설정하는거 
     $(window).resize(function(){
         let $width = $(window).width();
 
         if($width < 640){
             $(window).off("mousewheel DOMMouseScroll touchmove");
+            $(window).on("mousewheel DOMMouseScroll touchmove", function(e) {
+                e.preventDefault();
+                return;
+            });
+
             $("html, body").css("overflow", "auto")//overflow 를 auto로 해주면 hidden이 풀어지게 된다.
         }else{  //아니라면 일 때 설정해둔 내용을 전부 붙여넣기 해준다.
             $("html, body").css("overflow", "hidden")
@@ -86,7 +89,10 @@ $(document).ready(function(){
     // matchMedia = 사이트를 켰을때의 사이즈를 체크해준다.
     if (matchMedia("screen and (max-width: 640px)").matches) {
 
-        $(window).off("mousewheel DOMMouseScroll touchmove");
+        $(window).on("mousewheel DOMMouseScroll touchmove", function(e) {
+            e.preventDefault();
+            return;
+        });
             $("html, body").css("overflow", "auto")
         } else {
             $("html, body").css("overflow", "hidden")
@@ -148,32 +154,6 @@ $(document).ready(function(){
         },1000)
         $(".indicator ul li").removeClass("on").eq(wheel_count).addClass("on")
         $(".indicator ul li").removeClass("color").eq(wheel_count).addClass("color")
-    })
-
-
-    $("body").swipe({
-        swipe: function(event, direction){
-            if(direction == "up"){
-                // alert("위로")
-                wheel_count++
-                if(wheel_count > $(".section").length - 1){
-                    wheel_count = $(".section").length - 1 //만약 휙 카운트 값이 섹션의 수보다 크다면 고정을 시켜주겠다는 의미다.
-                }
-
-            }else if(direction == "down"){
-                // alert("아래로")
-                wheel_count--
-                if(wheel_count < 0){//만약 휠카운트 값이 0보다 작다면 0으로 고정시켜주어라는 의미
-                wheel_count = 0;
-            }}
-    
-            $("html, body").stop().animate({
-                scrollTop : $(".section").height() * wheel_count
-            },1000)//1초
-            $(".indicator ul li").removeClass("on").eq(wheel_count).addClass("on")
-            $(".indicator ul li").removeClass("color").eq(wheel_count).addClass("color")            
-        }
-
     })
 
     $slide_text.click(function(){
