@@ -211,6 +211,7 @@ h2{
                 transition: 0.4s;
                 opacity: 0;
                 visibility: hidden;
+                @include tablet{display: none;}
             }
             &.color::before{
                 opacity: 1;
@@ -269,7 +270,7 @@ h2{
                     }
                     ul{
                         li{
-                            font-size: $t-fz; letter-spacing: -1px;
+                            font-size: $t-fz; letter-spacing: -1px; height: 16px; line-height: 16px;
                             @include tablet{font-size: 1.5vw;}
                         }
                     }
@@ -293,7 +294,7 @@ h2{
             bottom: 0%; left: -20%;
             h1{
                 position: absolute; bottom: 0; left: 0;
-                text-align: center; font-size: 3.125em; height: 60px; line-height: 60px;
+                text-align: center; font-size: 2.8vw; height: 60px; line-height: 60px;
                 letter-spacing: -3px;
                 &:nth-child(1){
                     bottom: 35%;
@@ -479,6 +480,7 @@ h2{
         @include tablet{
             top: 0.6vw; left: 7vw;
         }
+        @include mobile{display: none;}
     }
     &-pc{
         max-width: 1240px; height: auto; margin: 0 auto;

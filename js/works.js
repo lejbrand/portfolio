@@ -28,7 +28,13 @@ $(document).ready(function(){
         if($(".header .header-wrap .logo a img").attr("src") == "images/logo.png"){
             $(".header .header-wrap .logo a img").attr("src","images/logo-w.png");
         }else{
-            $($button).attr("src","images/logo.png");
+            $(".header .header-wrap .logo a img").attr("src","images/logo.png");
+        }
+        
+        if($(".header").scss("background-color") == "#efeff6"){
+            $(".header").scss("background-color","transparent");
+        }else{
+            $(".header").scss("background-color","#efeff6");
         }
     })
 
@@ -295,14 +301,14 @@ $(document).ready(function(){
     // 버튼클릭시 목업 변경
     const $section_btn = $(".section .right .top .button ul li")
 
-    // $(".section:nth-child(1) .right .top .button ul li").click(function(){
-    //     let i = $(this).index()
-    //     $(".section:nth-child(1) .right .top .mokup .mokup-wrap").hide().eq(i).show()
-    // })
-    // $(".section:nth-child(3) .right .top .button ul li").click(function(){
-    //     let i = $(this).index()
-    //     $(".section:nth-child(3) .right .top .mokup .mokup-wrap").hide().eq(i).show()
-    // })
+    $(".section:nth-child(1) .right .top .button ul li").click(function(){
+        let i = $(this).index()
+        $(".section:nth-child(1) .right .top .mokup .mokup-wrap").hide().eq(i).show()
+    })
+    $(".section:nth-child(3) .right .top .button ul li").click(function(){
+        let i = $(this).index()
+        $(".section:nth-child(3) .right .top .mokup .mokup-wrap").hide().eq(i).show()
+    })
 
     $section_btn.click(function(){
         let i = $(this).index()
