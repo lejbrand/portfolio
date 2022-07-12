@@ -4,12 +4,7 @@ $(document).ready(function(){
         $(this).toggleClass("on")
         $(".hamburger a b").fadeToggle()
         $(".side").fadeToggle()
-        // if($(".header .header-wrap .logo a img").attr("src") == "images/logo.png"){
-        //     //js에서 html을 조작해서 강제로 바꿔주는 거기 떄문에 ../를 안 붙여 줘도 된다. html에서 동작을 하니까
-        //     $(".header .header-wrap .logo a img").attr("src","images/logo-w.png");
-        // }else{
-        //     $(".header .header-wrap .logo a img").attr("src","images/logo.png");
-        // }
+        
     })
 
     $(".text ul li").eq(0).addClass("animated slideInLeft").css("opacity",1).css("transition-delay","400ms").css("animation-delay","400ms");
