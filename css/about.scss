@@ -162,9 +162,9 @@ h2{
 
 // ////////////////////////////////////////////////
 // 사진, 좋아하는 거
-.c-box{position: absolute; width: 100%; height: 42vw; background-color: #efeff6; z-index: -1; display: none;
+.c-box{position: absolute; width: 100%; height: 45vw; background-color: #efeff6; z-index: -1; display: none;
     @include mobile{
-        display: block;
+        display: block; top: 180px;
     }
 }
 .about{
