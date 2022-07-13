@@ -28,4 +28,5 @@ $(document).ready(function(){
     $(".center ul li").eq(2).addClass("animated zoomIn").css("opacity",1).css("transition-delay","1800ms").css("animation-delay","1800ms");
     $(".center ul li").eq(3).addClass("animated zoomIn").css("opacity",1).css("transition-delay","2000ms").css("animation-delay","2000ms");
 
+
 })//jquery
