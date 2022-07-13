@@ -447,6 +447,7 @@ h2{
                 } 
                 li{
                     text-align: center; height: 2vw; line-height: 2vw; font-size: 1.2vw;
+                    transition: 1s;
                     @include mobile{
                         height: 6vw; line-height: 6vw; font-size: 3vw; margin-top: 3%;
                         letter-spacing: -2px;
