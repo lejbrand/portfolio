@@ -8,6 +8,8 @@ $(document).ready(function(){
     const $art = $(".section .slide .slide-pc .artwork")
     const $m_art = $(".section .slide .slide-mobile .artwork")
     const $button = $(".section .section-wrap .right .top .button ul li")
+    const $design = $(".section .section-wrap .right .bottom ul li:nth-child(1)")
+    // nth:child(1)로 첫번째 요소만 클릭 하였을때로 설정해준다.
 
     $(".indicator ul li").eq(0).addClass("on")
     $(".indicator ul li").eq(0).addClass("color")
@@ -339,5 +341,54 @@ $(document).ready(function(){
         $(".modal-wrap img").hide().scrollTop(0)
 
     })
+
+
+    // 모달 창 이미지
+    let guide_img = [
+        "http://via.placeholder.com/1200x8000",
+        "http://via.placeholder.com/1200x8000/4ac",
+        "http://via.placeholder.com/1200x8000/dae"
+    ]
+    // 디자인 가이드 창
+    $(".modal-design").mouseover(function(){
+        $("html,body").on('scroll touchmove mousewheel', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
+        });
+    })
+    $(".modal-design").mouseout(function(){
+        $("html,body").off('scroll touchmove mousewheel');
+    })
+    
+        // 클릭이벤트
+    $design.click(function(){
+        let i = $design.index(this);
+        // let i = $design.index(this) / 2;         - 2로 나뉘어 주는 것 
+        // let i = $(this).index()
+        // alert(i)
+        // $(".section").eq(0).show()
+        // $(".section").eq(i).find(".modal-design").show()        - 모달창을 안에 배열해 뒀을때 띄우려면 이렇게 써주면 된다.
+            $(".modal-design").slideDown()
+            $(".modal-design .design-wrap img").attr("src",guide_img[i]).show()
+            // if(!i/2) 라고 적어주면 i를 2로 나뉘어 떨어지는 값이 맞다면 이라는 의미 !important와 같은의미? if절에서 쓰이는 ~이 ~라면 이 없기 때문에 ! 를 써줘서 i/2로 나뉘어 진다면 이라는 의미로 쓰이게 된다.
+
+            // alert("확인")
+        // alert(i)
+    })
+
+    // index(this) = nth-of-type 과 같은 것이다.
+    // 모든 bottom ul li 의 순서를 세어주는데 0 , 1 , 2 의 순서가 되기 위해서 /2 로 나뉘어 준것
+    // this(index) = nth-child와 같다
+
+    $(".modal-design").click(function(){
+        $(this).hide()
+    })
+    // 디자인 가이드 창
+
+
+
+
+
 
 })//jquery
