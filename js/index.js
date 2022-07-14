@@ -7,6 +7,42 @@ $(document).ready(function(){
         
     })
 
+    // 쿠키설정
+    // function setCookie(name, value ,expiredays){
+    //     let todayDate = new Date()
+
+    //     todayDate.setDate(todayDate.getDate() + expiredays);
+
+    //     document.cookie = name + "="+escape(value) + ";path = / ; expires=" + todayDate.toGMTString+";"
+
+    // }
+
+    // function closePopup(){
+
+    //     if(document.today.chk.checked){
+    //         setCookie("notice","abc",1)
+    //     }
+    //     $(".notice").hide
+
+    // }
+
+    // let cookieDate = document.cookie;
+
+    // if(cookieDate.indexOf("notice = abc") < 0){
+    //     $(".notice").show()
+    // }else{
+    //     $(".notice").hide()
+    // }
+
+    // $("label").click(function(){
+    //     closePopup();
+    // })
+
+    // 쿠키설정
+
+
+
+
     $(".text ul li").eq(0).addClass("animated slideInLeft").css("opacity",1).css("transition-delay","400ms").css("animation-delay","400ms");
     $(".text ul li").eq(1).addClass("animated slideInRight").css("opacity",1).css("transition-delay","700ms").css("animation-delay","700ms");
     $(".text ul li").eq(2).addClass("animated slideInLeft").css("opacity",1).css("transition-delay","1000ms").css("animation-delay","1000ms");
@@ -14,6 +50,8 @@ $(document).ready(function(){
 
 
     // 큐브
+
+
     
     $(function () {
         var $cubelet = $('.cube');
@@ -106,6 +144,7 @@ $(document).ready(function(){
     });
      
         
+
 
 
 
