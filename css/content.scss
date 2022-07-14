@@ -9,39 +9,6 @@ html, body{width: 100%; height: 100%;}
 // font-family: 'Montserrat', sans-serif;
 // font-family: 'Nanum Brush Script', cursive;
 // font-family: 'Noto Sans KR', sans-serif;
-@font-face {
-    font-family: 'comscrpt';
-    src: url('../fonts/ComScrpt.ttf') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-// https://noonnu.cc/font_page/754
-@font-face {
-    font-family: 'Hahmlet-ExtraBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-ExtraBold.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-// https://noonnu.cc/font_page/758 함렛 SemiBold
-@font-face {
-    font-family: 'Hahmlet-SemiBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-SemiBold.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
-
-// https://noonnu.cc/font_page/873 (심경하체 홍국생명)
-@font-face {
-    font-family: 'SimKyungha';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/SimKyungha.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 // https://noonnu.cc/font_page/506
 @font-face {
@@ -50,114 +17,6 @@ html, body{width: 100%; height: 100%;}
     font-weight: normal;
     font-style: normal;
 }
-
-// https://noonnu.cc/font_page/481   (위메프체 세미볼드)
-@font-face {
-    font-family: 'Wemakeprice-SemiBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Wemakeprice-SemiBold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-// https://noonnu.cc/font_page/414  조선견고딕
-@font-face {
-    font-family: 'ChosunBg';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunBg.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-//https://noonnu.cc/font_page/652 문화재돌봄체 Bold
-@font-face {
-    font-family: 'Dolbomche_B';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_B.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-// https://noonnu.cc/font_page/653 문화재돌봄체 Regular
-@font-face {
-    font-family: 'Dolbomche_R';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_R.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-// https://noonnu.cc/font_page/453  페이북글꼴 ExtraBold
-@font-face {
-    font-family: 'paybooc-ExtraBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-ExtraBold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-// https://noonnu.cc/font_page/456  비씨카드글꼴 Bold
-@font-face {
-    font-family: 'BCcardB';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.1/BCcardB.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-// https://noonnu.cc/font_page/59 서울남산체
-@font-face {
-    font-family: 'SeoulNamsanM';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulNamsanM.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-// 나눔바른고딕
-@font-face {
-    font-family: 'NanumBarunGothic';
-    font-style: normal;
-    font-weight: 400;
-    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
-    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'NanumBarunGothic';
-    font-style: normal;
-    font-weight: 700;
-    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
-    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
-}
-
-@font-face {
-    font-family: 'NanumBarunGothic';
-    font-style: normal;
-    font-weight: 300;
-    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
-    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
-}
-
-.nanumbarungothic * {
-    font-family: 'NanumBarunGothic', sans-serif;
-}
-
-// https://noonnu.cc/font_page/55 도현체
-@font-face {
-    font-family: 'BMDOHYEON';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-// https://noonnu.cc/font_page/360 열린고딕bold
-@font-face {
-    font-family: 'YeolrinGothic-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/YeolrinGothic-Bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-// https://noonnu.cc/font_page/932 MICE고딕
-@font-face {
-    font-family: 'MICEGothic Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
-
 
 
 $max : 62.5%;
@@ -373,26 +232,8 @@ h2{
                     }
                     &:nth-child(2){
                         a{
-                            // font-family: 'MYYeongnamnu';
                             font-size: 30px;
-                            // font-family: 'Hahmlet-ExtraBold';
-                            // // font-family: 'SimKyungha';
-                            // // font-weight: bold;
                             font-family: 'kdg_Medium';
-                            // font-family: 'Wemakeprice-SemiBold';
-                            // font-family: 'ChosunBg';
-                            // font-family: 'Dolbomche_B';
-                            // font-family: 'Dolbomche_R';
-                            // font-family: 'Hahmlet-SemiBold';
-                            // font-family: 'paybooc-ExtraBold';
-                            // font-family: 'BCcardB';
-                            // font-family: 'SeoulNamsanM';
-                            // // font-weight: bold;
-                            // font-family: 'NanumBarunGothic';
-                            // font-family: 'S-CoreDream-7ExtraBold';
-                            // font-family: 'BMDOHYEON';
-                            // font-family: 'YeolrinGothic-Bold';
-                            // font-family: 'MICEGothic Bold';
                         }
                     }
                     &:nth-child(3){
