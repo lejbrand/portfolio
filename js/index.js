@@ -146,7 +146,23 @@ $(document).ready(function(){
         
 
 
+// 모바일에서 확대 막아주는 코드
+    document.documentElement.addEventListener('touchstart', function (event) {
+        if (event.touches.length > 1) {
+            event.preventDefault(); 
+        } 
+    }, false);
 
+var lastTouchEnd = 0; 
+
+document.documentElement.addEventListener('touchend', function (event) {
+        var now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+            event.preventDefault(); 
+        } lastTouchEnd = now; 
+    }, false);
+    
+// 모바일에서 확대 막아주는 코드
 
 
 
