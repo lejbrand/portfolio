@@ -665,6 +665,48 @@ h2{
     }
 }
 
+// 더마파크
+.section:nth-child(2){
+    .left{
+        .top{
+            .subtext{
+                .color{
+                    ul{
+                        li{
+                            &:nth-child(1){background-color: #191919;}
+                            &:nth-child(4){background-color: #f7f3e9;}
+                            &:nth-child(3){background-color: #4b644a;}
+                            &:nth-child(2){background-color: #6a041d}
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right{
+        .top{
+            .mokup{
+                .pc{
+                    &::after{
+                        background-image: url(../images/themapark-pc.png);
+                        // background-position: center center;
+                    }
+                }
+                .tab{
+                    &::after{
+                        background-image: url(../images/portfolio-tab.png);
+                    }
+                }
+                .mobile{
+                    &::after{
+                        background-image: url(../images/portfolio-mobile.png);
+                    }
+                }
+            }
+        }
+    }
+}
+// 더마파크
 
 .modal{
     width: 100%; height: 100%; background-color: #141422b7;
