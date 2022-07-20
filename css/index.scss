@@ -79,6 +79,9 @@ h2{
                     a{color: #efeff6; }//141422
                     &:nth-child(1){
                         font-weight: bold; font-size: ($lisf-fz+2);
+                        a{
+                            color: #121322;
+                        }
                     }
                 }
             }
@@ -305,12 +308,20 @@ h2{
 //     object-fit: cover;
 // }
 
-
-// @keyframes spin {
-//     from { transform: rotateY(0) rotateX(0); }
-//     to   { transform: rotateY(-360deg) rotateX(360deg); }
+// 큐브회전
+.cubelet-cube{
+    animation : spin 3s linear;
+    transform-style: preserve-3d;
+}
+// .cubelet-cube{
+//     animation : spin 5s infinite linear;
+//     transform-style: preserve-3d;
 // }
-
+@keyframes spin {
+    from { transform: rotateY(0) rotateX(0); }
+    to   { transform: rotateY(-360deg) rotateX(360deg); }
+}
+// 큐브회전
 
 
 
@@ -349,6 +360,16 @@ canvas {
 
 .index-wrap{
     width: 100%; height: 90%; position: fixed; left: 0; top: 5%;
+    .b-text{
+        position: fixed; bottom: 2vw;  left: 50%; transform: translateX(-50%);
+        color: #fff;
+        ul{
+            height: 60px; text-align: center; width: 500px;
+            li{
+                font-size: 20px; height: 30px;
+            }
+        }
+    }
 }
 
 .notice{

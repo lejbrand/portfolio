@@ -22,6 +22,7 @@ $(document).ready(function(){
         //한덩이리씩 내려가는 것들은 반복문을 돌려줘야지 작동을 제대로 한다. 
         // section이 k라는 위치에 내려가게 되면 $button을 찾아서 eq(0)에 색을 주라는 의미
     }
+    
 
     $(".hamburger a").click(function(){
         $(this).toggleClass("on")
@@ -282,19 +283,28 @@ $(document).ready(function(){
     // 버튼클릭시 목업 변경
     const $section_btn = $(".section .right .top .button ul li")
 
-    $(".section:nth-child(1) .right .top .button ul li").click(function(){
-        let i = $(this).index()
-        $(".section:nth-child(1) .right .top .mokup .mokup-wrap").hide().eq(i).show()
-    })
-    $(".section:nth-child(3) .right .top .button ul li").click(function(){
-        let i = $(this).index()
-        $(".section:nth-child(3) .right .top .mokup .mokup-wrap").hide().eq(i).show()
-    })
-
     $section_btn.click(function(){
         let i = $(this).index()
         $(".section").eq(wheel_count).find($(".right .top .mokup .mokup-wrap")).hide().eq(i).show()
     })
+
+
+    $(".portfolio .right .top .button ul li").click(function(){
+        let i = $(this).index()
+        $(".section:nth-child(1) .right .top .mokup .mokup-wrap").hide().eq(i).show()
+    })
+    $(".themapark .right .top .button ul li").click(function(){
+        let i = $(this).index()
+        $(".themapark .right .top .mokup .mokup-wrap").hide().eq(i).show()
+        $(".themapark .right .top .button ul li").removeClass("color").eq(i).addClass("color")
+        // this는 자기 자시을 의미하는 거라서 클래스를 추가해준다음에 또 삭제해 버려서 색이 사라진 것이다
+        $(this).addClass("color").sblings("li").removeClass("color")//sblings형제선택자 선택한 자신을 제외한 형제선택자 모두의 클래스를 제거해주는 것
+    })
+    $(".kooksoondang .right .top .button ul li").click(function(){
+        let i = $(this).index()
+        $(".section:nth-child(3) .right .top .mokup .mokup-wrap").hide().eq(i).show()
+    })
+
 
 
 
@@ -346,8 +356,8 @@ $(document).ready(function(){
     // 모달 창 이미지
     let guide_img = [
         "images/portfolio-guide.png",
-        "images/sorry_make.png",
-        "images/sorry_make.png"
+        "http://via.placeholder.com/1200x5000",
+        "http://via.placeholder.com/1200x5000"
     ]
     // 디자인 가이드 창
     $(".modal-design").mouseover(function(){
