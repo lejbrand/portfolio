@@ -381,6 +381,7 @@ h2{
                         position: absolute; width: 87%; height: 85%;
                         left: 50%; transform: translateX(-50%);
                         top: 9%;
+                        background-image: url(../images/sorry2.png);
                         background-size: cover;
                         z-index: -1;
                     }
@@ -403,6 +404,7 @@ h2{
                         position: absolute; width: 59%; height: 75%;
                         left: 50%; transform: translateX(-50%);
                         top: 14%;
+                        background-image: url(../images/sorry2.png);
                         background-size: cover;
                         z-index: -1;
                     }
@@ -694,12 +696,12 @@ h2{
                 }
                 .tab{
                     &::after{
-                        background-image: url(../images/portfolio-tab.png);
+                        background-image: url(../images/sorry.png);
                     }
                 }
                 .mobile{
                     &::after{
-                        background-image: url(../images/portfolio-mobile.png);
+                        background-image: url(../images/themapark-mobile.png);
                     }
                 }
             }

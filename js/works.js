@@ -346,8 +346,8 @@ $(document).ready(function(){
     // 모달 창 이미지
     let guide_img = [
         "images/portfolio-guide.png",
-        "http://via.placeholder.com/1200x8000/4ac",
-        "http://via.placeholder.com/1200x8000/dae"
+        "images/sorry_make.png",
+        "images/sorry_make.png"
     ]
     // 디자인 가이드 창
     $(".modal-design").mouseover(function(){
@@ -383,6 +383,8 @@ $(document).ready(function(){
 
     $(".modal-design").click(function(){
         $(this).hide()
+        $(".modal-design .design-wrap img").attr("src","#")
+        // 모달창이 사라질때 원래대로 돌아가 주는 코드 ↑
     })
     // 디자인 가이드 창
 
