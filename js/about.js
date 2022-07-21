@@ -33,13 +33,17 @@ $(document).ready(function(){
     $(".skill .icon ul li a").click(function(e){
         e.preventDefault()
     })
-    $(".skill .icon ul li").click(function(){
-        let inumber = $(this).index()
-        $(".skill .text ul li").hide().eq(inumber).show()
-        $(".skill .icon ul li").removeClass("on").eq(inumber).addClass("on")
-        $(".skill .text ul li").removeClass("on").eq(inumber).addClass("on")
 
-    })
+    // 클릭했을 떄 글자 바뀌기
+    // $(".skill .icon ul li").click(function(){
+    //     let inumber = $(this).index()
+    //     $(".skill .text ul li").hide().eq(inumber).show()
+    //     $(".skill .icon ul li").removeClass("on").eq(inumber).addClass("on")
+    //     $(".skill .text ul li").removeClass("on").eq(inumber).addClass("on")
+    //     count = inumber;
+    //     // 카운트는 inumber로 변경시켜주는 것
+
+    // })
 
     let timer = setInterval(function(){
         count++
@@ -54,6 +58,13 @@ $(document).ready(function(){
 
     $(".skill .icon ul li").mouseover(function(){
         clearInterval(timer)
+
+        let inumber = $(this).index()
+        $(".skill .text ul li").hide().eq(inumber).show()
+        $(".skill .icon ul li").removeClass("on").eq(inumber).addClass("on")
+        $(".skill .text ul li").removeClass("on").eq(inumber).addClass("on")
+        count = inumber;
+
     }).mouseout(function(){
         timer = setInterval(function(){
             count++

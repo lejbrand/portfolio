@@ -1,0 +1,336 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;  user-select: none;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+html, body{width: 100%; height: 100%;}
+
+
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Nanum Brush Script', cursive;
+// font-family: 'Noto Sans KR', sans-serif;
+
+// https://noonnu.cc/font_page/506
+@font-face {
+    font-family: 'kdg_Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/kdg_Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+$max : 62.5%;
+$main-color : #6667ab;
+$b-color: #141422;
+$fz : 25px;
+$lisf-fz : 22px;
+$nav-fz : 23px;
+$mobile : 640px;
+$tablet : 1200px;
+@mixin media($point) {
+    @media #{$point}{
+        @content;
+
+    }
+}
+@mixin tablet{
+    @media (min-width: ($mobile+1)) and (max-width: $tablet){
+    @content;
+    }
+}
+@mixin mobile{
+    @media (max-width: $mobile){
+        @content;
+    }
+}
+@font-face {
+    font-family: 'MYYeongnamnu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2{
+    font-size: 33px;
+    @include tablet{
+        font-size: 25px;
+    }
+    @include mobile{
+        font-size: 28px;
+    }
+}
+
+.header{
+    position: fixed; top: 0; left: 0; z-index: 10; width: 100%; height: 100px;
+    @include mobile{height: 70px;}
+    &-wrap{
+        // max-width: 1920px; 
+        max-width: $max; margin: 0 auto;
+        @include tablet{
+            max-width: 99%;
+        }
+        @include mobile{
+            margin: 0 1%; max-width: 98%; height: 70px;
+        }
+        .logo{
+            width: 100px; height: 100px; margin: 25px; float: left;
+            @include mobile{width: 100px; height: 50px; margin: 2%;}
+            a{display: inline-block; width: 100%; height: 50%;
+                img{width: 100px; height: 50px;
+                }
+            }
+        }
+        .nav{width: 50%; height: 100px; float: right;
+            @include tablet{
+                width: 60%; height: 100px;
+            }
+            @include mobile{
+                display: none;
+            }
+            ul{
+                overflow: hidden;
+                li{
+                    width: 25%; height: 100px; line-height: 100px; text-align: center; float: left; font-size: $nav-fz;
+                    a{color: #141422;}
+                    &:nth-child(4){
+                        font-weight: bold; font-size: ($lisf-fz+2);
+                    }
+                }
+            }
+        }
+        .hamburger{
+            position: absolute;
+            right: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            display: none;
+            @include mobile{
+                display: block;
+            }
+            a{
+                display: block;
+                position: relative;
+                width: 30px;
+                height: 22px;
+                b, &::after, &::before{
+                    font-size: 0;
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    width: 100%;
+                    height: 3px;
+                    border-radius: 2px;
+                    background-color: #141422;    
+                }
+                &::before{
+                    top: calc(50% - 1px);
+                    transform: translateY(10px) rotate(0);
+                    transition: transform 0.2s , width 0.2s 0.2s, right 0.2s 0.2s;
+                }
+                &::after{
+                    top: calc(50% - 1px);
+                    transform: translateY(-10px) rotate(0);
+                    transition: transform 0.2s , width 0.2s 0.2s, right 0.2s 0.2s;
+                }
+                b{
+                    top: calc(50% - 1px);
+                }
+                &.on::before{
+                    transform: rotate(45deg);
+                    background-color: #fff;
+                }
+                &.on::after{
+                    transform: rotate(-45deg);
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.side{
+    width: 100%; height: 100%; position: fixed;
+    top: 0; left: 0; background-color: $main-color;
+    display: none; z-index: 5;
+    ul{
+        position: absolute;
+        top: 50%; left: 50%; transform: translate(-50%,-50%);
+        li{
+            height: 60px; line-height: 60px;
+            a{
+                display: inline-block; width: 100%; height: 100%;
+                color: #fff; font-size: 30px;
+            }
+        }
+    }
+}
+
+// 내용
+
+.content{
+    width: 100%; height: 100%;
+    &-wrap{
+        width: 70%; height: 70%; overflow: hidden;
+        // margin: 10% auto;
+        // border: 1px solid #ccc;
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px #6667ab41;
+        background-color: #efeff6;
+        position: relative; top: 50%; left: 50%; transform: translate(-50%,-50%);
+        margin: 0;        
+        // display: grid;
+        // grid-template-columns: repeat(3,30%);
+        // grid-template-rows: 2vw repeat(1,1fr);
+        // grid-gap: 10%;
+        @include tablet{
+            width: 80%; 
+        }
+        @include mobile{
+            width: 96%; height: 60%;
+        }
+        .top{
+            width: 100%; height: 2vw; border: 1px solid #c1c2dd;
+            border-radius: 20px 20px 0 0;
+            // grid-column: (1/4);
+            @include tablet{height: 3vw;}
+            @include mobile{height: 5vw;}
+            p{
+                text-align: right; margin-right: 2vw; height: 2vw; line-height: 2vw;
+                color: #6667ab;
+                @include tablet{height: 3vw; line-height: 3vw;}
+                @include mobile{height: 5vw; line-height: 5vw;}
+                
+            }
+        }
+        .left{
+            width: calc(98%/3); height: 100%; float: left;
+            height: 100%; position: relative;
+            @include mobile{height: 100%;}
+            ul{
+                width: 100%; height: 40%;
+                position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+                @include mobile{height: 50%;}
+                li{
+                    color: #141422;
+                    height: 2vw; line-height: 2vw;
+                    margin-bottom: 1vw; text-align: center;
+                    @include tablet{
+                        height: 6vw; line-height: 6vw;
+                    }
+                    @include mobile{
+                        height: 8vw; line-height: 8vw;
+                    }
+                    &:nth-child(1){
+                        font-size: 20px; font-weight: bold;
+                        @include tablet{
+                            font-size: 2.5vw;  letter-spacing: -1px;
+                        }
+                        @include mobile{
+                            letter-spacing: -2px; font-size: 3.4vw;
+                        }
+                    }
+                    &:nth-child(2){
+                        a{
+                            font-size: 30px;
+                            font-family: 'kdg_Medium';
+                        }
+                    }
+                    &:nth-child(3){
+                        margin-top: 2vw;
+                        @include tablet{margin-top: 5px;}
+                        @include mobile{margin-top: 3vw; letter-spacing: -2px;}
+                    }
+                    &:last-child{
+                        border: 1px solid #c1c2dd;
+                        width: 30%; margin: 0 auto; border-radius: 20px;
+                        background-color: #e0e0ee;
+                        @include tablet{
+                            width: 50%; height: 4vw; line-height: 4vw;
+                        }
+                        @include mobile{
+                            width: 23vw; height: 6vw; line-height: 6vw;
+                        }
+                        &:hover{
+                            box-shadow: 2px 2px 4px rgb(178, 179, 213);
+                        }
+                        a{
+                            display: inline-block;
+                            width: 100%; height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .center{
+            width: calc(98%/3); height: 100%; float: left; margin: 0 1%; 
+            position: relative;
+            &::after{ 
+                content: "";
+                position: absolute;
+                height: 80%; width: 1px; background-color: #c1c2dd;
+                left: -1%; top: 50%; transform: translateY(-50%);
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                height: 80%; width: 1px; background-color: #c1c2dd;
+                right: -1%; top: 50%; transform: translateY(-50%);
+            }
+            ul{
+                width: 100%; height: 30%; position: absolute; top: 45%; left: 50%;
+                transform: translate(-50%,-50%);
+                @include tablet{
+                    height: 40%; top: 50%;
+                }
+                @include mobile{
+                    height: 50%; top: 51%;
+                } 
+                li{
+                    text-align: center; height: 2vw; line-height: 2vw; font-size: 1.2vw;
+                    transition: 1s; 
+                    opacity: 0;
+                    @include mobile{
+                        height: 6vw; line-height: 6vw; font-size: 3vw; margin-top: 3%;
+                        letter-spacing: -2px;
+                    }
+                    &:nth-child(1),
+                    &:nth-child(2){
+                        font-weight: 600;
+                    }
+                    &:nth-child(3){
+                        margin-top: 6vw;
+                        font-weight: bold; font-size: 40px;
+                        @include tablet{
+                            margin-top: 15vw;
+                            font-size: 2.3vw; height: 3vw; line-height: 3vw;
+                        }
+                        @include mobile{margin-top: 60px; font-size: 3vw;}
+                    }
+                    // &:nth-child(4){
+                    //     margin-top:  -0.5vw;
+                    //     @include tablet{
+                    //         font-size: 2vw;
+                    //     }
+                    // }
+                    @include tablet{
+                        font-size: 1.6vw; height: 2.4vw; line-height: 2.4vw; letter-spacing: -1px;
+                    }
+                }
+            }
+        }
+        .logo{
+            width: calc(98%/3); height: 100%; float: left;
+            position: relative; height: 100%;
+            .img{
+                width: 50%; height: 25%;
+                position: absolute;
+                top: 50%; left: 50%; transform: translate(-50%,-50%);
+            }
+            img{
+                width: 100%; height: auto;
+            }
+        }
+
+    }
+}

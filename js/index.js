@@ -166,7 +166,11 @@ document.documentElement.addEventListener('touchend', function (event) {
 
 
 
-
+$("html,body").on('scroll touchmove mousewheel', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    return false;
+});
 
 
 

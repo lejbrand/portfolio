@@ -335,20 +335,20 @@ $(document).ready(function(){
         let number = $(this).index()
         $(".modal").slideDown()
         $(".modal-wrap").slideDown()
-        $(".modal-wrap img").hide().eq(number).scrollTop(0).show()
+        $(".modal-wrap .img").hide().eq(number).scrollTop(0).show()
 
     })
     $m_art.click(function(){
         let number = $(this).index()
         $(".modal").slideDown()
         $(".modal-wrap").slideDown()
-        $(".modal-wrap img").hide().eq(number).scrollTop(0).show()
+        $(".modal-wrap .img").hide().eq(number).scrollTop(0).show()
     })
 
     $(".modal p").click(function(){
         $(".modal").slideUp()
         $(".modal-wrap").slideUp()
-        $(".modal-wrap img").hide().scrollTop(0)
+        $(".modal-wrap .img").hide().scrollTop(0)
 
     })
 
