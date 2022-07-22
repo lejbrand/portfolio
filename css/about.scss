@@ -221,7 +221,23 @@ h2{
                     }
                     @include mobile{margin-top: 10%;}
                     li{
+                        position: relative;
                         width: 80%; height: 100%;
+                        cursor: pointer;
+                        &:hover::after{
+                            position: absolute;
+                            content: attr(data-text);
+                            // border: 1px solid #6667ab;
+                            width: 65px; text-align: center;
+                            background-color: #6667ab;
+                            color: #fff;
+                            border-radius: 5px;
+                            bottom: -30px; left: 50%; transform: translateX(-50%);
+                            padding: 2px 5px;
+                        }
+                        &:nth-child(4):hover::after{
+                            left: 70%;
+                        }
                         img{
                             width: 100%; height: auto;
                         }
