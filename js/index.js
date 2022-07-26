@@ -7,38 +7,45 @@ $(document).ready(function(){
         
     })
 
-    // 쿠키설정
-    // function setCookie(name, value ,expiredays){
-    //     let todayDate = new Date()
+    //쿠키설정
+    function setCookie(name, value, expiredays){
+        let todayDate = new Date();
 
-    //     todayDate.setDate(todayDate.getDate() + expiredays);
+        todayDate.setDate(todayDate.getDate() + expiredays);
 
-    //     document.cookie = name + "="+escape(value) + ";path = / ; expires=" + todayDate.toGMTString+";"
+        document.cookie = name + "="+escape(value) + "; path = / ; expires=" + todayDate.toGMTString+";" 
 
-    // }
+    }
 
-    // function closePopup(){
+    function closePopup(){
 
-    //     if(document.today.chk.checked){
-    //         setCookie("notice","abc",1)
-    //     }
-    //     $(".notice").hide
+        if(document.today.chk.checked){
+            setCookie("notice","abc",1)
+        }
+        $(".notice").hide()
 
-    // }
+    }
 
-    // let cookieDate = document.cookie;
+    let cookieDate = document.cookie;
 
-    // if(cookieDate.indexOf("notice = abc") < 0){
-    //     $(".notice").show()
-    // }else{
-    //     $(".notice").hide()
-    // }
+    if(cookieDate.indexOf("notice=abc") < 0){
+        $(".notice").show();
 
-    // $("label").click(function(){
-    //     closePopup();
-    // })
+    }else{
+        $(".notice").hide();
 
-    // 쿠키설정
+    }
+
+    $("label").click(function(){
+        closePopup();
+        setCookie("notice","abc",1)
+    })
+
+    $(".notice p").click(function(){
+        $(".notice").hide()
+    })
+
+    //쿠키설정
 
 
 

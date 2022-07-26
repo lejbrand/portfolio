@@ -811,3 +811,17 @@ h2{
             }
         }
     }
+
+.semi{
+    .right{
+        .top{
+            .mokup{
+                .pc{
+                    &::after{
+                        background-image: url(../images/semi.png);
+                    }
+                }
+            }
+        }
+    }
+}
