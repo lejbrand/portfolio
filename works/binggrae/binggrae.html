@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빙그레클론</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- 폰트 -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/> 
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/binggrae.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/binggrae.js"></script>
+</head>
+<body>
+    <!-- 헤더영역 -->
+    <div class="header">
+        <div class="header-top">
+            <ul>
+                <li><a href="#">
+                    <span>구매포털시스템</span>
+                    <img src="images/main/link_arrow02.png" alt="이동">
+                </a></li>
+                <li><a href="#">
+                    <span>인재채용</span>
+                    <img src="images/main/link_arrow02.png" alt="이동">
+                </a></li>
+            </ul>
+        </div>
+        <div class="header-nav">
+            <div class="header-box">
+                <a href="#"><img src="images/main/logo-pc.png" alt="로고"></a>
+            </div>
+            <div class="header-box">
+                <ul>
+                    <li><a href="#">회사소개</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">CEO인사말</a></li>
+                                <li><a href="#">경영이념</a></li>
+                                <li><a href="#">사업분야</a></li>
+                                <li><a href="#">히스토리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">제품소개</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">아이스크림</a></li>
+                                <li><a href="#">우유/치즈</a></li>
+                                <li><a href="#">발효유</a></li>
+                                <li><a href="#">커피</a></li>
+                                <li><a href="#">음료</a></li>
+                                <li><a href="#">주스</a></li>
+                                <li><a href="#">스낵/디저트</a></li>
+                                <li><a href="#">건강지향식품</a></li>
+                                <li><a href="#">수출제품</a></li>
+                            </ul>                            
+                        </div>
+                    </li>
+                    <li><a href="#">지속가능경영</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">지속가능경영체계</a></li>
+                                <li><a href="#">Eco-Friendly</a></li>
+                                <li><a href="#">Shared Value</a></li>
+                                <li><a href="#">Global Integrity</a></li>
+                                <li><a href="#">윤리준법경영</a></li>
+                                <li><a href="#">사회공헌</a></li>
+                                <li><a href="#">보고서 및 정책</a></li>
+                            </ul>                            
+                        </div>                    
+                    </li>
+                    <li><a href="#">투자정보</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">전자공고</a></li>
+                                <li><a href="#">주식정보</a></li>
+                                <li><a href="#">공시정보</a></li>
+                                <li><a href="#">재무정보</a></li>
+                                <li><a href="#">IR 정보</a></li>
+                            </ul>                            
+                        </div>
+                    </li>
+                    <li><a href="#">고객센터</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">고객상담</a></li>
+                                <li><a href="#">사이버신고</a></li>
+                                <li><a href="#">안전신문고</a></li>
+                            </ul>                            
+                        </div>                    
+                    </li>
+                </ul>
+            </div>
+            <div class="header-box header-hamburger">
+                <div class="lang">
+                    <p>KR <img src="images/main/lang_btn.png" alt="아래로"></p>
+                    <ul>
+                        <li><a href="#">KR</a></li>
+                        <li><a href="#">EN</a></li>
+                        <li><a href="#">CN</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <a href="#">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 헤더영역 -->
+
+    <!-- 햄버거 클릭 -->
+    <div class="hamburger-modal">
+        <div class="modal-wrap">
+            <ul>
+                <li>
+                    <a href="#">회사소개</a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="#">CEO인사말</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">경영이념</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">사업분야</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">히스토리</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">제품소개</a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="#">전체보기</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">아이스크림</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">우유/치즈</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">발효유</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">커피</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">음료</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">주스</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">스낵/디저트</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">건강지향식품</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">수출제품</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">지속가능경영</a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="#">지속가능경영체계</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">Eco-Friendy</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">Shared Value</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">Global integrity</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">윤리준법경영</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                                <ul>
+                                    <li>윤리강령</li>
+                                    <li>공정거리자율준수</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">사회공헌</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">보고서 및 정책</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">투자정보</a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="#">전자공고</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">주식정보</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">공시정보</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">재무정보</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">IR정보</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="#">고객센터</a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="#">고객상담</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                                <ul>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">1:1 이메일상담</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">사이버신고</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">안전신문고</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                            <li>
+                                <a href="#">개인정보처리방침</a>
+                                <img src="images/layout/pc_ham_hover_img.png" alt="바로가기">
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- 햄버거 클릭 -->
+
+
+    <div class="section section01">
+        <div class="logo-box">
+            <div class="pc">
+                <img src="images/main/sec01_logo.png" alt="pc로고">
+            </div>
+            <div class="mobile">
+                <img src="images/main/m_sec01_logo.png" alt="모바일로고">
+            </div>
+        </div>
+        <div class="search-box">
+            <div class="text">
+                <img src="images/main/magnifying-glass.png" alt="돋보기">
+                <input type="text" id="search" placeholder="제품명을 입력해주세요" style="border: none;">
+            </div>
+            <button>search</button>
+        </div>
+        <div class="link">
+            <ul>
+                <li><a href="#">#링키바</a></li>
+                <li><a href="#">#더단백</a></li>
+                <li><a href="#">#요플렛프로틴</a></li>
+                <li><a href="#">#바나나맛우유</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 우측메뉴 -->
+    <div class="float-menu">
+        <div class="btn-shop">
+            <a href="#">shop</a>
+        </div>
+        <div class="btn-arrow">
+            <div class="btn-down">
+                <img src="images/layout/fix_arrow.png" alt="아래로">
+            </div>
+            <div class="btn-up">
+                <img src="images/layout/fix_arrow.png" alt="위로">
+            </div>
+        </div>
+    </div>
+    <!-- 우측메뉴 -->
+    
+    <!-- 해피 -->
+    <div class="section section02">
+        <div class="happy">
+            <h3>행복한 빙그레의 맛!</h3>
+            <div class="swiper happy-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div data-aos="fade-up">
+                                <div class="img">
+                                    <img src="images/main/sec02_img01.png" alt="아이스크림">
+                                </div>
+                                <div class="text">
+                                    <p>아이스크림</p>
+                                    <p>view more</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <div class="img">
+                                    <img src="images/main/sec02_img02.png" alt="우유/치즈">
+                                </div>
+                                <div class="text">
+                                    <p>우유/치즈</p>
+                                    <p>view more</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div data-aos="fade-up" data-aos-delay="200">
+                                <div class="img">
+                                    <img src="images/main/sec02_img03.png" alt="발효유">
+                                </div>
+                                <div class="text">
+                                    <p>발효유</p>
+                                    <p>view more</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div data-aos="fade-up" data-aos-delay="300">
+                                <div class="img">
+                                    <img src="images/main/sec02_img04.png" alt="커피">
+                                </div>
+                                <div class="text">
+                                    <p>커피</p>
+                                    <p>view more</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div data-aos="fade-up" data-aos-delay="400">
+                                <div class="img">
+                                    <img src="images/main/sec02_img05.png" alt="음료">
+                                </div>
+                                <div class="text">
+                                    <p>음료</p>
+                                    <p>view more</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div data-aos="fade-up" data-aos-delay="500">
+                                <div class="img">
+                                    <img src="images/main/sec02_img06.png" alt="주스">
+                                </div>
+                                <div class="text">
+                                    <p>주스</p>
+                                    <p>view more</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div data-aos="fade-up" data-aos-delay="600">
+                                <div class="img">
+                                    <img src="images/main/sec02_img07.png" alt="스낵/디저트">
+                                </div>
+                                <div class="text">
+                                    <p>스낵/디저트</p>
+                                    <p>view more</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div data-aos="fade-up" data-aos-delay="700">
+                                <div class="img">
+                                    <img src="images/main/sec02_img08.png" alt="건강지향식품">
+                                </div>
+                                <div class="text">
+                                    <p>건강지향식품</p>
+                                    <p>view more</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div data-aos="fade-up" data-aos-delay="800">
+                                <div class="img">
+                                    <img src="images/main/sec02_img09.png" alt="수출제품">
+                                </div>
+                                <div class="text">
+                                    <p>수출제품</p>
+                                    <p>view more</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- 해피 -->
+
+
+        <!-- 브랜드 -->
+        <div class="brand">
+            <h3>brand shop</h3>
+            <div class="swiper brand-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div data-aos="fade-up" class="fade">
+                            <div class="logo">
+                                <div class="pc-img">
+                                    <img src="images/main/sec02_logo01.png" alt="더단백">
+                                </div>
+                                <div class="m-img">
+                                    <img src="images/main/m_sec02_logo01.png" alt="더단백">
+                                </div>
+                            </div>
+                            <div class="logo-hover">
+                                <div class="img">
+                                    <img src="images/main/sec02_logo01.png" alt="더단백">
+                                </div>
+                                <div class="text">
+                                    <ul>
+                                        <li>빙그레 건강 ttf의</li>
+                                        <li>단백질 전문 브랜드</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#"><button>구입하기</button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div data-aos="fade-up" class="fade" data-aos-delay="100">
+                            <div class="logo">
+                                <div class="pc-img">
+                                    <img src="images/main/sec02_logo02.png" alt="아카페라">
+                                </div>
+                                <div class="m-img">
+                                    <img src="images/main/m_sec02_logo02.png" alt="아카페라">
+                                </div>
+                            </div>
+                            <div class="logo-hover">
+                                <div class="img">
+                                    <img src="images/main/sec02_logo02.png" alt="아카페라">
+                                </div>
+                                <div class="text">
+                                    <ul>
+                                        <li>부담없는 캐주얼한 커피</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#"><button>구입하기</button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div data-aos="fade-up" class="fade" data-aos-delay="200">
+                            <div class="logo">
+                                <div class="pc-img">
+                                    <img src="images/main/sec02_logo03.png" alt="요플렛">
+                                </div>
+                                <div class="m-img">
+                                    <img src="images/main/m_sec02_logo03.png" alt="요플렛">
+                                </div>
+                            </div>
+                            <div class="logo-hover">
+                                <div class="img">
+                                    <img src="images/main/sec02_logo03.png" alt="요플렛">
+                                </div>
+                                <div class="text">
+                                    <ul>
+                                        <li>39년 전통의</li>
+                                        <li>대한민국 Heritage</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#"><button>구입하기</button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div data-aos="fade-up" class="fade" data-aos-delay="300">
+                            <div class="logo">
+                                <div class="pc-img">
+                                    <img src="images/main/sec02_logo04.png" alt="바나나맛우유">
+                                </div>
+                                <div class="m-img">
+                                    <img src="images/main/m_sec02_logo04.png" alt="바나나맛우유">
+                                </div>
+                            </div>
+                            <div class="logo-hover">
+                                <div class="img">
+                                    <img src="images/main/sec02_logo04.png" alt="바나나맛우유 ">
+                                </div>
+                                <div class="text">
+                                    <ul>
+                                        <li>대한민국을 대표하는</li>
+                                        <li>No.1 가공우유</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#"><button>구입하기</button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div data-aos="fade-up" class="fade" data-aos-delay="400">
+                            <div class="logo">
+                                <div class="pc-img">
+                                    <img src="images/main/sec02_logo05.png" alt="끌레도르">
+                                </div>
+                                <div class="m-img">
+                                    <img src="images/main/m_sec02_logo05.png" alt="끌레도르">
+                                </div>
+                            </div>
+                            <div class="logo-hover">
+                                <div class="img">
+                                    <img src="images/main/sec02_logo05.png" alt="끌레도르">
+                                </div>
+                                <div class="text">
+                                    <ul>
+                                        <li>진한 맛의 감동</li>
+                                        <li>프리미엄아이스크림</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#"><button>구입하기</button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div data-aos="fade-up" class="fade" data-aos-delay="500">
+                            <div class="logo">
+                                <div class="pc-img">
+                                    <img src="images/main/sec02_logo06.png" alt="마노플랜">
+                                </div>
+                                <div class="m-img">
+                                    <img src="images/main/m_sec02_logo06.png" alt="마노플랜">
+                                </div>
+                            </div>
+                            <div class="logo-hover">
+                                <div class="img">
+                                    <img src="images/main/sec02_logo06.png" alt="마노플랜">
+                                </div>
+                                <div class="text">
+                                    <ul>
+                                        <li>남자를 위한 건강플랜,</li>
+                                        <li>마노플랜</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#"><button>구입하기</button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div data-aos="fade-up" class="fade" data-aos-delay="600">
+                            <div class="logo">
+                                <div class="pc-img">
+                                    <img src="images/main/sec02_logo07.png" alt="비바시티">
+                                </div>
+                                <div class="m-img">
+                                    <img src="images/main/m_sec02_logo07.png" alt="비바시티">
+                                </div>
+                            </div>
+                            <div class="logo-hover">
+                                <div class="img">
+                                    <img src="images/main/sec02_logo07.png" alt="비바시티">
+                                </div>
+                                <div class="text">
+                                    <ul>
+                                        <li>맛과 건강의 완벽한 조화 </li>
+                                        <li>비바시티</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#"><button>구입하기</button></a>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <!-- 브랜드 -->
+
+    <!-- 신고 질문 -->
+    
+    <div class="section section03">
+        <div class="top" data-aos="fade-up">
+            <div class="cyber">
+                <a href="#">
+                    <h4>사이버신고</h4>
+                    <p>빙그레 임직원의 부당한 요구 또는<br>업무 처리, 기타 부정행위 제보</p>
+                    <span class="view">제보하기</span>
+                </a>
+            </div>
+            <div class="safe">
+                <a href="#">
+                    <h4>안전신문고</h4>
+                    <p>빙그레 종사자의 유해·위험요소 및<br>안전·보건에 관한 의견 제보</p>
+                    <span class="view">제보하기</span>
+                </a>
+            </div>
+        </div>
+        <div class="bottom" data-aos="fade-up">
+            <div class="qna">
+                <h4>자주 묻는 질문</h4>
+                <button class="more" data-aos="fade-up" data-aos-delay="50">더보기</button>
+            </div>
+            <div class="qna-list">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <p>Q.아이스크림에는 왜 유통기한이 없나요?</p>
+                            <p><img src="images/main/link_arrow01.png" alt="가기"></p>
+                        </a>
+                    </li>                    
+                    <li>
+                        <a href="#">
+                            <p>Q.구매일이 불분명하고 영수증이 없지만 제품의 유통기한이 지났습니다.</p>
+                            <p><img src="images/main/link_arrow01.png" alt="가기"></p>
+                        </a>
+                    </li>                    
+                    <li>
+                        <a href="#">
+                            <p>Q.유통기한 뒤에 있는 알파벳 기호는 무엇인가요?</p>
+                            <p><img src="images/main/link_arrow01.png" alt="가기"></p>
+                        </a>
+                    </li>                    
+                    <li>
+                        <a href="#">
+                            <p>Q.빙그레는 HACCP인증을 모두 받았나요?</p>
+                            <p><img src="images/main/link_arrow01.png" alt="가기"></p>
+                        </a>
+                    </li>                    
+                    <li>
+                        <a href="#">
+                            <p>Q.바나나맛우유 유통기한을 어떻게 읽나요?</p>
+                            <p><img src="images/main/link_arrow01.png" alt="가기"></p>
+                        </a>
+                    </li>                    
+                    <li>
+                        <a href="#">
+                            <p>Q.빙그레 서체의 사용범위를 알고싶어요.</p>
+                            <p><img src="images/main/link_arrow01.png" alt="가기"></p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom_box" data-aos="fade-up" data-aos-delay="100">
+                <div class="email box">
+                    <a href="#">
+                        <h4>이메일상담</h4>
+                        <p>빙그레의 궁금한 사항을 문의해 주세요.<br>최대한 빠른 시일내에 친절하게 답변해드리겠습니다.</p>
+                        <span class="view">상담하기</span>
+                    </a>                    
+                </div>
+                <div class="call box">
+                    <a href="#">
+                        <h4>전화상담</h4>
+                        <ul>
+                            <li>080.022.0056</li>
+                            <li>월~금(공휴일제외) <p>09:00~17:30</p></li>
+                        </ul>
+                    </a>                       
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 신고 질문 -->
+
+    <!--푸터 -->
+    <div class="footer">
+        <div class="footer-box01">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/layout/f_logo.png" alt="logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">오시는길</a></li>
+            </ul>
+        </div>
+        <div class="footer-box02">
+            <ul>
+                <li>회사명:빙그레</li>
+                <li>경기도 남양주시 다산동 4344-3 / 경기도 남양주시 다산순환로 45(다산동)</li>
+            </ul>
+        </div>
+        <div class="footer-box03">
+            <div class="copy">
+                <p>ⓒ Binggrae all rights reserved.</p>
+            </div>
+            <div class="icon">
+                <div class="sns">
+                    <ul>
+                        <li><a href="#"><img src="images/layout/footer_sns01.png" alt="sns"></a></li>
+                        <li><a href="#"><img src="images/layout/footer_sns02.png" alt="sns"></a></li>
+                        <li><a href="#"><img src="images/layout/footer_sns03.png" alt="sns"></a></li>
+                    </ul>
+                </div>
+                <div class="store">
+                    <a href="#">
+                        <ul>
+                            <li><img src="images/layout/flag_store.png" alt="store">
+                            <p>Flagship store Soft Lab</p></li>
+                            <li><img src="images/layout/select_btn01.png" alt="button"></li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--푸터 -->
+
+</body>
+</html>

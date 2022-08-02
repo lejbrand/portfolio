@@ -356,7 +356,10 @@ $(document).ready(function(){
     // 모달 창 이미지
     let guide_img = [
         "images/portfolio-guide.png",
-        "http://via.placeholder.com/1200x5000",
+        "",
+        "",
+        "",
+        "http://via.placeholder.com/1200x5000/4ac",
         "http://via.placeholder.com/1200x5000"
     ]
     // 디자인 가이드 창
@@ -419,6 +422,21 @@ document.documentElement.addEventListener('touchend', function (event) {
 
 // 모바일에서 확대 막아주는 코드
 
+// 버튼클릭
+$(".together01 .button_together button").click(function(){
+    $(".together01 .button_together .together_wrap").slideToggle()
+})
+// 버튼클릭
 
-
+// 버튼 마우스 오버시 휠막기
+$(".together01 .button_together .together_wrap").mouseover(function(){
+    $("html,body").on('scroll touchmove mousewheel', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+    });
+}).mouseout(function(){
+    $("html,body").off('scroll touchmove mousewheel');
+})
+// 버튼 마우스 오버시 휠막기
 })//jquery
