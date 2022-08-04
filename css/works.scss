@@ -835,14 +835,12 @@ h2{
         }
         .bottom{
             ul{
+                @include mobile{
+                    display: flex; justify-content: center;
+                }
                 li{
                     &:nth-child(1){
                         display: none;
-                    }
-                    &:nth-child(2){
-                        @include mobile{
-                            margin-left: 33%;
-                        }
                     }
                 }
             }
@@ -858,7 +856,7 @@ h2{
         right: 30px; bottom: 100px;
         width: 130px; height: 200px;
         @include mobile{
-            bottom: 115px;
+            bottom: 110px;
         }
         button{
             position: absolute;
@@ -935,13 +933,16 @@ h2{
         }
         .bottom{
             ul{
+                @include mobile{
+                    display: flex; justify-content: center;
+                }
                 li{
                     &:nth-child(1){
                         display: none;
                     }
                     &:nth-child(2){
                         @include mobile{
-                            margin-left: 33%;
+                            
                         }
                     }
                 }
@@ -966,14 +967,12 @@ h2{
     }
     .bottom{
         ul{
+            @include mobile{
+                display: flex; justify-content: center;
+            }
             li{
                 &:nth-child(1){
                     display: none;
-                }
-                &:nth-child(2){
-                    @include mobile{
-                        margin-left: 33%;
-                    }
                 }
             }
         }
@@ -1002,7 +1001,7 @@ h2{
                     }
                     &:nth-child(2){
                         @include mobile{
-                            margin-left: 20%;
+                            margin-left: 10%;
                         }
                     }
                 }

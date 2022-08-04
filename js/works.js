@@ -361,7 +361,7 @@ $(document).ready(function(){
         "",
         "",
         "images/themapark guide.png",
-        "http://via.placeholder.com/1200x5000"
+        "images/kooksoondang_guide.png"
     ]
     // 디자인 가이드 창
     $(".modal-design").mouseover(function(){
