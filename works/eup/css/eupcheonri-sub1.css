@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+
+/* 2 배너 */
+    .banner{
+        width: 100%; height: 600px;
+        background-color: #aaa;
+        overflow: hidden;
+        position: relative;
+    }
+    .banner ul li{
+        display: none;
+    }
+    .banner ul li > img{
+        width: 1920px; height: 100%;
+        position: absolute;
+        top: 0; left: 0;
+        position: relative;
+    }
+    .banner ul li p{
+        position: absolute;
+        font-size: 28px;
+        color: #fff;
+    }
+    .banner ul li .logo{
+        position: absolute;
+        width: 1920px; height: 100%;
+        background-color: rgba(0,0,0,0.6);
+        top: 0;
+        left: 0;
+    }
+    .banner ul li .logo .logo-wrap{
+        width: 1280px; height: 100%;
+        margin: 0 auto;
+        /* background-color: #aaa; */
+        position: relative;
+    }
+    .banner ul li .logo img{
+        width: 145px; height: 180px;
+        position: absolute;
+        top: 36%;
+        left: 45%;
+    }
+    .banner ul li:nth-child(1) .logo p{
+        font-size: 28px;
+        position: absolute;
+        top: 68%;
+        left: 46%;
+    }
+    .banner ul li:nth-child(1) .logo p::after{
+        content: "";
+        display: inline-block;
+        width: 160px; height: 2px;
+        background-color: #fff;
+        position: absolute;
+        left: -17px;
+        top: -5px;
+    }
+    .banner ul li:nth-child(2) .logo p{
+        font-size: 28px;
+        position: absolute;
+        top: 68%;
+        left: 46%;
+    }
+    .banner ul li:nth-child(2) .logo p::after{
+        content: "";
+        display: inline-block;
+        width: 160px; height: 2px;
+        background-color: #fff;
+        position: absolute;
+        left: -22px;
+        top: -5px;
+    }
+/* 2 배너 끝 */
+
+
+/* 3 탭메뉴 버튼 */
+.btn{
+    margin-top: 90px;
+}
+.btn .btn-wrap{
+    width: 1280px; height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+.btn ul{
+    position: absolute;
+    top: 0px; left: 400px;
+}
+.btn ul li{
+    float: left;
+    width: 180px; height: 50px;
+    background-color: #dfdfdf;
+    margin-right: 80px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn ul li a{
+    font-size: 16px;
+    color: #7d7d7d;
+    cursor: pointer;
+}
+.btn ul li.on{
+    background-color: #f6d76a;
+}
+.btn ul li.on a{
+    color: #2c2c2c;
+}
+/* 3 탭메뉴 버튼 끝 */
+
+
+/* 4 탭메뉴 컨텐츠 */
+.tabmenu{
+    width: 100%;
+}
+.tabmenu .content-wrap{
+    width: 1280px; height: 100%;
+    margin: 0 auto;
+}
+.tabmenu .content-wrap .content{
+    margin-top: 120px;
+    display: none;
+}
+
+    /* 읍천리382 */
+    .tabmenu .eupcheonri .eupcheonri1{
+        width: 100%; height: 340px;
+    }
+    .tabmenu .eupcheonri .eupcheonri1 .left{
+        width: 70%; height: 100%;
+        float: left;
+        text-align: center;
+    }
+        .tabmenu .eupcheonri .eupcheonri1 .left h3{
+            font-size: 40px;
+            color: #2c2c2c;
+            font-weight: normal;
+        }
+        .tabmenu .eupcheonri .eupcheonri1 .left span{
+            font-size: 40px;
+            color: #2c2c2c;
+            font-weight: bold;
+        }
+        .tabmenu .eupcheonri .eupcheonri1 .left p{
+            font-size: 24px;
+            color: #2c2c2c;
+        }
+    .tabmenu .eupcheonri .eupcheonri1 .right{
+        width: 30%; height: 100%;
+        float: left;
+    }
+    .tabmenu .eupcheonri .eupcheonri1 .right img{
+        width: 334px; height: 334px;
+    }
+
+    .tabmenu .eupcheonri .eupcheonri2{
+        width: 100%; height: 500px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .tabmenu .eupcheonri .eupcheonri2 .prize{
+        width: 380px; height: 457px;
+        box-shadow: 0px 0px 10px #ccc;
+        position: relative;
+        float: left;
+        margin-right: 43px;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    .tabmenu .eupcheonri .eupcheonri2 .prize .prize-wrap{
+        width: 340px; height: 437px;
+        margin: 10px auto;
+    }
+    .tabmenu .eupcheonri .eupcheonri2 .prize img{
+        width: 264px; height: 250px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+    .tabmenu .eupcheonri .eupcheonri2 .prize h4{
+        font-size: 24px;
+        color: #2c2c2c;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .tabmenu .eupcheonri .eupcheonri2 .prize h4::after{
+        content: "";
+        display: inline-block;
+        width: 340px; height: 2px;
+        background-color: #2c2c2c;
+        position: absolute;
+        left: 20px;
+        top: 340px;
+    }
+    .tabmenu .eupcheonri .eupcheonri2 .prize p{
+        font-size: 14px;
+        color: #2c2c2c;
+        text-align: center;
+    }
+    .tabmenu .eupcheonri .eupcheonri2 .prize:hover{
+        border: 3px solid #f6d76a;
+        transition: 0.3s;
+    }
+
+    /* 오시는길 */
+    .tabmenu .way{
+        width: 100%; height: 880px;
+        margin-bottom: 170px;
+    }
+    .tabmenu .way p{
+        font-size: 18px;
+        color: #2c2c2c;
+    }
+    .tabmenu .way span{
+        font-size: 18px;
+        font-weight: bold;
+        color: #2c2c2c;
+    }
+    .tabmenu .way .map{
+        width: 1280px; height: 828px;
+        border-top: 6px solid #f6d76a;
+        margin-top: 20px;
+    }
+    .tabmenu .way-more{
+        width: 100%; height: 630px;
+    }
+    .tabmenu .way-more .waybox{
+        width: 400px; height: 454px;
+        background-color: #f6d76a;
+        border-radius: 10px;
+        float: left;
+    }
+    .tabmenu .way-more .waybox:nth-child(1),
+    .tabmenu .way-more .waybox:nth-child(2){
+        margin-right: 40px;
+    }
+    .tabmenu .way-more .waybox .waybox-wrap{
+        width: 340px;
+        height: 354px;
+        margin: 50px auto;
+        position: relative;
+    }
+    .tabmenu .way-more .waybox h4{
+        font-size: 28px;
+        text-align: center;
+        color: #2c2c2c;
+    }
+    .tabmenu .way-more .waybox .circle{
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px #5e5e5e;
+        width: 150px; height: 150px;
+        border-radius: 50%;
+        top: 82px;
+        left: 94px;
+    }
+    .tabmenu .way-more .waybox:nth-child(1) img{
+        position: absolute;
+        top: 110px;
+        left: 120px;
+    }
+    .tabmenu .way-more .waybox:nth-child(2) img,
+    .tabmenu .way-more .waybox:nth-child(3) img{
+        position: absolute;
+        top: 110px;
+        left: 117px;
+    }
+    .tabmenu .way-more .waybox p{
+        font-size: 17px;
+        text-align: center;
+        margin-top: 230px;
+        color: #2c2c2c;
+    }
+    .tabmenu .way-more .waybox:nth-child(3) p{
+        margin-top: 244px;
+    }
+/* 4 탭메뉴 컨텐츠 끝 */
+

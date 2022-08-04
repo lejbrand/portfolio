@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배민문방구클론</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/bamin.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/bamin.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="#"><img src="images/icon/logo.png" alt="배민문방구로고"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">문구</a></li>
+                <li><a href="#">리빙</a></li>
+                <li><a href="#">책/매거진F</a></li>
+                <li><a href="#">배민그린</a></li>
+                <li><a href="#">배달이친구들</a></li>
+                <li><a href="#">콜라보레이션</a></li>
+                <li><a href="#">명예의전당</a></li>
+            </ul>
+        </div>
+        <div class="log">
+            <ul>
+                <li><a href="#"><img src="images/icon/search.png" alt="검색"></a></li>
+                <li><a href="#"><img src="images/icon/shop.png" alt="카트"></a></li>
+                <li><a href="#"><p>로그인</p></a></li>
+                <li><a href="#"><img src="images/icon/ham.png" alt="햄버거메뉴"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal-search"></div>
+    <div class="search">
+        <div class="search-wrap">
+            <div class="ham">
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="top">
+                <input type="text" placeholder="검색어를 입력하세요">
+                <button>
+                    <img src="images/icon/search.png" alt="검색">
+                </button>
+            </div>
+            <div class="bottom">
+                <div class="search-box">
+                    <h2>최근 검색어</h2>
+                    <p>최근검색어가 없어요.</p>
+                </div>
+                <div class="item-box">
+                    <h2>최근 본 상품</h2>
+                    <p>최근 본 상품이 없어요.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ham-wrap-box"></div>
+    <div class="ham-wrap">
+        <div class="ham-box">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="ham-header">
+            <h1>앗!<br>로그인이 필요해요</h1>
+        </div>
+        <div class="ham-nav">
+            <h2>테마</h2>
+            <ul>
+                <li><a href="#">전체보기</a></li>
+                <li><a href="#">쉿! 비밀이야 내 마음 속 원픽은...</a></li>
+                <li><a href="#">양자택일 당신의 선택은?</a></li>
+                <li><a href="#">왜 갑티슈를 만들었을까?</a></li>
+            </ul>
+            <h2>카테고리</h2>
+            <ul>
+                <li><a href="#">전체보기</a></li>
+                <li><a href="#">문구</a></li>
+                <li><a href="#">리빙</a></li>
+                <li><a href="#">책/매거진F</a></li>
+                <li><a href="#">배민그린</a></li>
+                <li><a href="#">배달이친구들</a></li>
+                <li><a href="#">콜라보레이션</a></li>
+                <li><a href="#">명예의전당</a></li>
+            </ul>
+        </div>
+        <div class="ham-footer">
+            <ul>
+                <li><img src="images/icon/cos.png" alt="고객센터"></li>
+                <li><a href="#">1:1 문의</a></li>
+                <li><a href="#">이메일 문의</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--메인배너 -->
+    <div class="banner">
+        <div class="swiper main-banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/banner/5f63c2c2-02ca-462e-9017-10fbbd93ab6f.png" alt="아이스크림">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/banner/e38cdef2-4edb-4603-9b94-1b43df839112.png" alt="테이프">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/banner/e59265a2-ef6f-4110-a3c5-00d466520b40.png" alt="편지">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/banner/200211a6-7b72-4f2e-a38a-c1a2fe8bc0b0.png" alt="양말">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <p class="next">
+            <img src="images/icon/main_arr_next.png" alt="오른쪽">
+            <img src="images/icon/main_arr_next_on.png" alt="오른쪽">
+        </p>
+        <p class="prev">
+            <img src="images/icon/main_arr_prev.png" alt="왼쪽">
+            <img src="images/icon/main_arr_prev_on.png" alt="왼쪽">
+        </p>
+    </div>
+    <!--메인배너 -->
+
+    <!-- 물건들 -->
+    <div class="item">
+        <div class="main-item">
+            <div class="banner01">
+                <a href="#">
+                    <img src="images/banner/cedc164d-c736-4d2e-924f-ed6d5893da6b.png" alt="나의첫배민문방구">
+                </a>
+            </div>
+            <div class="main-item item01">
+                <div class="swiper main-item-wrap">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="images/item/6d7b7458-5542-4843-abfb-8b72c3c19a2e.png" alt="볼펜">
+                                    <img src="images/item/hover/b4694ac2-5e0c-4844-8457-94d42ac1510a.png" alt="볼펜">
+                                </div>
+                                <div class="text">
+                                    <span>BEST</span>
+                                    <ul>
+                                        <li>컴퓨터용싸인펜. 오늘이 전설이 될 것이다</li>
+                                        <li>1,000원</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="images/item/fff0a2ee-7315-466f-b691-8af9f9844a80.png" alt="item">
+                                    <img src="images/item/hover/50d2b3c8-fafd-4bc1-b006-a3dc73be5ee8.png" alt="item">
+                                </div>
+                                <div class="text">
+                                    <ul>
+                                        <li>카드케이스. 덮어놓고 긁다보면 거지꼴을 못면한다</li>
+                                        <li>8,000원</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="images/item/26439187-5fd5-4241-9558-18128bd2d6f5.png" alt="item">
+                                    <img src="images/item/hover/f06e2c50-5022-4ac3-94bf-59f691b6a8e4.png" alt="item">
+                                </div>
+                                <div class="text">
+                                    <ul>
+                                        <li>스탠드그립.뾱</li>
+                                        <li>8,900원</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="images/item/3f508a60-0273-4d9c-be9f-d0d623136c64.png" alt="item">
+                                    <img src="images/item/hover/4add3eb8-357f-4b40-ac6a-3f96011aa1ae.png" alt="item">
+                                </div>
+                                <div class="text">
+                                    <p>BEST</p>
+                                    <ul>
+                                        <li>볼펜세트. 어머펜이에요</li>
+                                        <li>3,500원</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="images/item/5f6b0d20-1897-4cce-a078-9aef8e388930.png" alt="item">
+                                    <img src="images/item/hover/e79c49a9-0b29-49eb-a553-08998ce097a4.png" alt="item">
+                                </div>
+                                <div class="text">
+                                    <ul>
+                                        <li>뱃지. 햄버거</li>
+                                        <li>5,500원</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="images/item/250d194d-ec05-4003-ac29-9d9e73b745cf.png" alt="item">
+                                    <img src="images/item/hover/d029a158-5398-419d-a72e-2fbef6fc5030.png" alt="item">
+                                </div>
+                                <div class="text">
+                                    <span>BEST</span>
+                                    <ul>
+                                        <li>때수건. 다 때가 있다</li>
+                                        <li>2,000원</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p class="next">
+                    <img src="images/icon/arr_swiper_next_l.png" alt="다음">
+                    <img src="images/icon/arr_swiper_next_l_on.png" alt="다음">
+                </p>
+                <p class="prev">
+                    <img src="images/icon/arr_swiper_prev_l.png" alt="이전">
+                    <img src="images/icon/arr_swiper_prev_l_on.png" alt="이전">
+                </p>
+            </div>
+        </div>
+        <h2>요즘 잘 나가요</h2>
+
+        <!-- 베스트아이템 -->
+        <div class="b-item item-list">
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/1f91d6a7-86b0-4437-ad4f-f89a0f99e90e.png" alt="item">
+                        <img src="images/item/hover/063bd3ec-58e3-4ed2-b4b5-da29a446c9d2.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li>배달이친구들 지금뭐해 피규어. 메이의 <br>감미로운 오후</li>
+                            <li>3,500원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/6d7b7458-5542-4843-abfb-8b72c3c19a2e.png" alt="item">
+                        <img src="images/item/hover/48af2d03-05f0-4ba6-aca0-ae628dc77240.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <span class="best">BEST</span>
+                        <span class="green">GREEN</span>
+                        <ul>
+                            <li>커피찌꺼기를 재활용해 손으로 만든 연필</li>
+                            <li>3,000원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/cdd2b0c1-5617-4a95-bebf-bb5cfc440a91.png" alt="item">
+                        <img src="images/item/hover/212310b6-6560-4895-8171-afce97bc526d.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <span class="best">BEST</span>
+                        <ul>
+                            <li>잘나가요세트</li>
+                            <li>15,000원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/d0d5b101-654d-4b63-ab3d-2e101032d4e9.gif" alt="item">
+                        <img src="images/item/hover/ffb3e52c-79f6-4c4f-a806-08fc72009d2d.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <span class="green">GREEN</span>
+                        <ul>
+                            <li>종이로 만든 박스테이프.두근두근</li>
+                            <li>4,500원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/843d16a2-2644-46bd-87a7-0c90cf204030.png" alt="item">
+                        <img src="images/item/hover/c0fd78fc-27fd-42ee-aef3-15655e8b29b8.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <span class="best">BEST</span>
+                        <ul>
+                            <li>작은 쇼핑백. 축복</li>
+                            <li>1,800원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/234ba93b-8c1c-4a29-9420-2caac9c3db8f.png" alt="item">
+                        <img src="images/item/hover/2812844c-4a75-4332-8a70-2113e36472e2.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <span class="best">BEST</span>
+                        <ul>
+                            <li>큰 쇼핑백. 뭘 이런걸 다</li>
+                            <li>2,300원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/d80521bd-b6c8-4785-82bf-cd6943277e93.png" alt="item">
+                        <img src="images/item/hover/843d0126-19aa-4305-995f-3e16814839d8.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <span class="green">GREEN</span>
+                        <ul>
+                            <li>화학표백을 하지 않은 재생지로 만든 메모잇</li>
+                            <li>2,300원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/42fde91d-0a09-47bb-95ba-86d14c8b26e4.png" alt="item">
+                        <img src="images/item/hover/00bfb006-688b-4911-a5de-5eca9a55b156.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <span class="best">BEST</span>
+                        <span class="green">GREEN</span>
+                        <ul>
+                            <li>재생지에 콩기름으로 인쇄한 일기장</li>
+                            <li>3,500원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- 베스트아이템 -->
+
+        <!--아이템 두번째  -->
+        <div class="main-item">
+            <div class="banner02">
+                <a href="#">
+                    <img src="images/banner/7694f3b5-e9bf-4d39-b575-588eb0670450.jpg" alt="묘하게 유용하네">
+                </a>
+            </div>
+            <div class="main-item item01">
+                <div class="swiper main-item-wrap item-wrap02">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="images/item/330269f6-0f93-4aae-9720-8cd4f5ccf8ef.png" alt="item">
+                                    <img src="images/item/hover/280d6de1-7bb2-4a1d-afbd-2e519df8ae02.png" alt="item">
+                                </div>
+                                <div class="text">
+                                    <ul>
+                                        <li>을지로 마스킹테이프. 십메다줄자</li>
+                                        <li>4,500원</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="images/item/f65ec0ec-ea5f-41bb-ba43-68579fbcf34a.png" alt="item">
+                                    <img src="images/item/hover/2d3d2fc6-c4fd-4a92-b799-21a020601bcb.png" alt="item">
+                                </div>
+                                <div class="text">
+                                    <ul>
+                                        <li>을지로 목장갑. 위잉 뚝딱</li>
+                                        <li>6,000원</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="images/item/c6804ecd-251c-45d7-ab61-2671837a6bd1.png" alt="item">
+                                    <img src="images/item/hover/90668ba5-84e9-415e-99d8-476269e40f54.png" alt="item">
+                                </div>
+                                <div class="text">
+                                    <p>BEST</p>
+                                    <ul>
+                                        <li>효자손. 혼자서도 잘해요</li>
+                                        <li>12,900원</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="images/item/250d194d-ec05-4003-ac29-9d9e73b745cf.png" alt="item">
+                                    <img src="images/item/hover/d029a158-5398-419d-a72e-2fbef6fc5030.png" alt="item">
+                                </div>
+                                <div class="text">
+                                    <span>BEST</span>
+                                    <ul>
+                                        <li>때수건. 다 때가 있다</li>
+                                        <li>2,000원</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p class="next">
+                    <img src="images/icon/arr_swiper_next_l.png" alt="다음">
+                    <img src="images/icon/arr_swiper_next_l_on.png" alt="다음">
+                </p>
+                <p class="prev">
+                    <img src="images/icon/arr_swiper_prev_l.png" alt="이전">
+                    <img src="images/icon/arr_swiper_prev_l_on.png" alt="이전">
+                </p>
+            </div>
+        </div>        
+        <!--아이템 두번째  -->
+
+        <h2>새로 나왔어요</h2>
+        <!-- 신제품 -->
+        <div class="item-list new">
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/e9b2585e-5d6b-489e-b619-8db2178019c6.jpg" alt="item">
+                        <img src="images/item/hover/a990a642-d639-4190-8980-b90115504c1d.jpg" alt="item">
+                    </div>
+                    <div class="text">
+                        <span class="sale"><b>10%</b> SALE</span>
+                        <span class="best">BEST</span>
+                        <ul>
+                            <li>매거진F No.21 Ramyun</li>
+                            <li><span class="line">15,000원</span>13,500원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/eabcfe53-0ef2-44f5-871b-f1d2fd1b9e8f.jpg" alt="item">
+                        <img src="images/item/hover/30fdbd9c-4ff1-423d-af7b-f5c716acd7df.jpg" alt="item">
+                    </div>
+                    <div class="text">
+                        <span class="sale"><b>10%</b> SALE</span>
+                        <ul>
+                            <li>매거진F No.20 Tools</li>
+                            <li><span class="line">15,000원</span>13,500원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/d0113f4c-3788-4551-93d9-9b27eb9c9793.png" alt="item">
+                        <img src="images/item/hover/413b0924-0a6e-4658-b583-3e0fa290eb6c.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <span class="sale"><b>10%</b> SALE</span>
+                        <span class="best">BEST</span>
+                        <ul>
+                            <li>매거진F No.19 Whisky</li>
+                            <li><span class="line">15,000원</span>13,500원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/6d3512de-6108-48c6-8544-0de8bc116353.gif" alt="item">
+                        <img src="images/item/hover/2a8ae7ac-1fac-465e-9573-2081e10cd2c9.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li>배달이친구들 스탠드그립 6종</li>
+                            <li>8,000원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/526c13d0-5e85-438e-ae0b-ad91ac026eb9.gif" alt="item">
+                        <img src="images/item/hover/5b07a1cf-6453-4f7f-a0f8-7e86eed26e48.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <span class="best">BEST</span>
+                        <ul>
+                            <li>배달이친구들 팝업카드 2종</li>
+                            <li>4,000원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/52afbaa7-809e-4e55-8080-3c357a94ba3a.gif" alt="item">
+                        <img src="images/item/hover/3f1d6fa2-a5a5-4470-8730-fe8c92efbdef.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li>배달이친구들 케이블타이 2종</li>
+                            <li>4,000원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/d34c8a47-74d1-4a88-bb4a-a3efbaf9b5e1.gif" alt="item">
+                        <img src="images/item/hover/f3c94ea1-da31-400a-8b8f-9cd66909b308.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li>배달이친구들 손바닥양면노트 2종</li>
+                            <li>2,000원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/8c3f148b-5f48-4175-9c2c-284f6fb1583f.gif" alt="item">
+                        <img src="images/item/hover/b409a10c-20aa-4cd3-a990-6ccefa713919.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li>배달이친구들 대문짝얼굴노트 4종</li>
+                            <li>3,000원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/21cb8a0e-3aa4-464e-9354-104030c54294.png" alt="item">
+                        <img src="images/item/hover/89722ba3-ab51-4cab-9d73-35224a9f1270.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li>배달이친구들 지금뭐해 피규어. 감자의 <br>수확하는 계절</li>
+                            <li>3,500원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/87fb3a65-c7f6-4f1b-aab6-8edfe6e12245.png" alt="item">
+                        <img src="images/item/hover/44aca8be-5b9d-41d4-940d-e8bc36d88305.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li>배달이친구들 지금뭐해 피규어. 왕의 언박싱<br> 타임</li>
+                            <li>3,500원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/f7fee3a0-9571-42d0-815b-7df2feca703e.png" alt="item">
+                        <img src="images/item/hover/a067d9b7-ff45-4d15-a46a-73d633be6157.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li>배달이친구들 지금뭐해 피규어. 봉다리의<br> 달리는 아침</li>
+                            <li>3,500원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/1f91d6a7-86b0-4437-ad4f-f89a0f99e90e.png" alt="item">
+                        <img src="images/item/hover/063bd3ec-58e3-4ed2-b4b5-da29a446c9d2.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li>배달이친구들 지금뭐해 피규어. 메이의<br> 감미로운 오후</li>
+                            <li>3,500원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- 신제품 -->
+
+        <h2>지금은 할인중</h2>
+        <!-- 할인제품 -->
+        <div class="item-list sale">
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/662f9d40-c272-43c2-924f-d852980fb0a1.png" alt="item">
+                        <img src="images/item/hover/6dd2e7ea-72aa-477c-bb6e-905c3082becb.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <span class="sale"><b>5%</b> SALE</span>
+                        <span class="best">BEST</span>
+                        <ul>
+                            <li>양말세트. ㅋㅋ골고루 양말</li>
+                            <li><span class="line">27,500원</span>26,000원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/55bbc3ca-10a5-4f16-a4ce-579da43219ce.jpg" alt="item">
+                        <img src="images/item/hover/85d9262e-463d-4707-99a7-fdb3086534eb.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <span class="sale"><b>5%</b> SALE</span>
+                        <span class="best">BEST</span>
+                        <ul>
+                            <li>양말세트. ㅋㅋ안보이는 양말</li>
+                            <li><span class="line">20,000원</span>19,000원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/88730e5d-2504-44df-9a77-cddf516de2d6.png" alt="item">
+                        <img src="images/item/hover/45dc3dcd-04a8-4f4f-9f81-01fc0225dfeb.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <span class="sale"><b>5%</b> SALE</span>
+                        <ul>
+                            <li>양말세트. 왼발 오른발/li>
+                            <li><span class="line">27.500원</span>26,000원</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="list-box">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/item/97bd11c2-20dc-4e41-8203-fd32c4ff2730.png" alt="item">
+                        <img src="images/item/hover/71eb7be3-3ea1-48cf-b73b-012cf1efa9c4.png" alt="item">
+                    </div>
+                    <div class="text">
+                        <span class="sale"><b>10%</b> SALE</span>
+                        <span class="best">BEST</span>
+                        <p>SOLD OUT</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- 할인제품 -->
+    </div>
+    <!-- 물건들 -->
+
+    <!-- 푸터 -->
+    <div class="footer">
+        <div class="footer-wrap">
+            <div class="left">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/icon/logo.png" alt="로고">
+                    </a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="top">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#"><b>개인정보처리방침</b></a></li>
+                        <li><a href="#">대량구매/제휴안내</a></li>
+                        <li><a href="#"><img src="images/icon/icon_footer_insta.png" alt="인스타그램"><p>@baemin_store</p></a></li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <ul>
+                        <li>상호 : (주)우아한형제들</li>
+                        <li>대표 : 김범준</li>
+                        <li>사업자등록번호 : 120-87-65763</li>
+                        <li>통신판매업신고번호 : 2021-서울송파-0515</li>
+                        <li><a href="#">사업자정보확인</a></li>
+                        <li>대표번호 : 1670-9902</li>
+                        <li>이메일 : marketing_store@woowahan.com</li>
+                        <li>주소 : 서울특별시 송파구 위례성대로 2 장은빌딩</li>
+                        <li>호스팅제공 : (주)우아한형제들</li>
+                    </ul>
+                    <div class="copy">
+                        <span>© Woowa Brothers Corp. All rights reserved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 푸터 -->
+
+    <!-- 위쪽으로 가는 -->
+    <div class="up">
+        <img src="images/icon/top.svg" alt="위로">
+    </div>
+    <!-- 위쪽으로 가는 -->
+
+</body>
+</html>
+

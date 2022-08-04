@@ -6,43 +6,70 @@ $("document").ready(function(){
     })
 
 
-    $(".hamburger a").click(function(){
-        $(".hamburger a").toggleClass("on")
-        $(".header .header-nav .header-box:nth-child(2)").fadeToggle()
-        $(".hamburger-modal").fadeToggle()
-        if($(".hamburger a").hasClass("on")){//hasClass 는 클래스의 유무를 체크해주는 코드
-            $(".header").mouseover(function(){
-                $(".header-box > ul > li > .submenu").hide()
-                $(".header").removeClass("on")
-            })
+    const $hamburger = $(".hamburger a");
+    const $header_box = $(".header .header-nav .header-box");
+    const $modal = $(".hamburger-modal");
+
+    $hamburger.click(function(){
+        if($header.hasClass("on")){
+            $header.removeClass("on")
+            $nav_list.find(" > a").removeClass("color");
+            $nav_list.find(".submenu").hide()
+        }
+        $(this).toggleClass("on")
+        $header_box.eq(1).toggle();
+        $modal.toggle()
+
+        if($(this).hasClass("on")){
+            $("html,body").css("overflow","hidden") //스크롤 없애기
         }else{
-            $(".header").mouseover(function(){
-                $(".header").addClass("on")
-                $(".header-box > ul > li .submenu").show()
-            }).mouseout(function(){
-                $(".header-box > ul > li > .submenu").hide()
-                $(".header").removeClass("on")
-            })            
+            $("html,body").css("overflow","visible")
+        }        
+    })
+
+    const $header = $(".header");
+    const $nav_list = $(".header-box > ul > li");
+
+    $header_box.mouseout(function(){
+        $nav_list.find(" > a").removeClass("color");
+    })
+    
+    $header.find(".header-top").mouseover(function(){
+        if($(this).hasClass("on")){
+            $header.addClass("on")   
         }
         
+    }).mouseout(function(){
+        $header.removeClass("on")
+        $nav_list.find(" > a").removeClass("color");
+        $nav_list.find(".submenu").hide()
     })
 
-    $(".header-box > ul > li").mouseover(function(){
-        let i = $(this).index()
-        $(".header").addClass("on")
-        $(".header-box > ul > li").eq(i).find("a").addClass("color")
-        $(".header-box > ul > li .submenu").addClass("animated fadeIn").css("transition-delay","600ms").css("animation-delay","600ms");
-
-    }).mouseout(function(){
-        $(".header-box > ul > li a").removeClass("color")
+    $header.mouseover(function(){
+        
+        if($(this).hasClass("on")){
+            $header.addClass("on")   
+        }
     })
 
-    $(".header").mouseover(function(){
-        $(".header").addClass("on")
-        $(".header-box > ul > li .submenu").show()
+    $(".section").mouseover(function(){
+        $header.removeClass("on")   
+        $nav_list.find(" > a").removeClass("color");
+        $nav_list.find(".submenu").hide()
+    })
+
+    
+    $nav_list.mouseover(function(){
+        let i = $(this).index();
+        $header.addClass("on")
+        $nav_list.find(" > a").removeClass("color").eq(i).addClass("color");
+        $nav_list.find(".submenu").addClass("animated fadeIn").css("transition-delay","600ms").css("animation-delay","600ms").show()
     }).mouseout(function(){
-        $(".header-box > ul > li > .submenu").hide()
-        $(".header").removeClass("on")
+        if(!$(this).hasClass("on")){
+            return;
+        }
+        $header.removeClass("on")
+        
     })
 
 

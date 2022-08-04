@@ -1,0 +1,499 @@
+@charset "utf-8";
+
+section{
+    max-width: 1920px; overflow: hidden;
+}
+
+.font-color{
+    color: #2c2c2c;
+}
+
+.btn{
+    width: 1920px;
+    height: 50px;
+    padding-top: 71px;
+    padding-bottom: 71px;
+    background-color: #fafafa;
+}
+
+.btn ul{
+    width: 1280px;
+    margin: 0 auto;
+    padding-left: 254px;
+    padding-right: 254px;
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    grid-template-rows: repeat(1,50px);
+    column-gap: 18px;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn ul li{
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #dfdfdf;
+    cursor: pointer;
+}
+
+.btn ul li span{
+    color: #7d7d7d;
+    width: 100%; height: 100%;
+    font-size: 16px;
+}
+
+/* 가맹점 창업 안내 시작 */
+.process{
+    width: 1920px;
+    height: 804px;
+    background-color: #fff;
+}
+.process .pro-title{
+    width: 1920px;
+    height: 204px;
+    font-size: 36px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+
+}
+.process .pro-title ul{
+    width: 1280px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.process .pro-title ul li{
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+.process .pro-title ul li a{
+    cursor: default;
+}
+
+.process .pro-title img{
+    padding-right: 0;
+    width: 29px;
+    height: 32px;
+}
+
+.process .pro-content{
+    width: 1920px;
+    height: 793px;
+    background-color: #fafafa;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pro-content>p{
+    padding-top: 45px;
+    font-size: 36px;
+    font-weight: bold;
+}
+.pro-content .pro-content-wrap{
+    width: 1280px;
+    height: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 360px 80px 360px 80px 360px);
+    grid-template-rows: repeat(3, 150px);
+    grid-row-gap: 40px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.pro-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 500;
+}
+.pro-item img{
+    width: 144px;
+    height: 144px;
+    padding-right: 15px;
+}
+.pro-item-txt{
+    text-align: left;
+    width: 182px;
+}
+.pro-item-txt h2{font-size: 18px; font-weight: 500;}
+.pro-item-txt h3{font-size: 14px; font-weight: 500; line-height: 35px;}
+.pro-item-txt p{font-size: 12px;  font-weight: 500; text-align: left;}
+.pro-arrow{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 500;
+}
+/* 가맹점 창업 안내 끝 */
+
+
+/* 창업 경쟁력 시작 */
+.compet{
+    width: 1920px;
+    height: 843px;
+}
+.compet .compet-title{
+    width: 1920px;
+    height: 204px;
+    font-size: 36px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.compet .compet-title ul{
+    width: 1280px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.compet .compet-title ul li{
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+.compet .compet-title ul li a{
+    cursor: default;
+}
+
+.compet .compet-title img{
+    padding-right: 0;
+    width: 29px;
+    height: 32px;
+}
+
+.compet .compet-content{
+    width: 1920px;
+    background-color: #fafafa;
+    margin: 0 auto;
+}
+.compet-wrap{
+    width: 1280px;
+    height: 854px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 610px);
+    justify-content: center;
+    grid-column-gap: 20px;
+}
+.compet-left{
+    width: 610px;
+    height: 839px;
+    display: grid;
+    align-content: center;
+}
+.compet-right{
+    display: grid;
+    grid-template-columns: repeat(3, 190px);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.compet-img{ width: 190px; height: 190px; cursor: pointer;}
+.compet-right img{
+    width: 190px;
+    height: 190px;
+    border-radius: 30px;
+}
+/* 창업 경쟁력 끝 */
+
+/* 창업 비용 시작 */
+.price{
+    width: 1920px;
+    height: 804px;
+    background-color: #fff;
+}
+.price .pri-title{
+    width: 1920px;
+    height: 204px;
+    font-size: 36px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.price .pri-title ul{
+    width: 1280px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.price .pri-title ul li{
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+.price .pri-title ul li a{
+    cursor: default;
+}
+
+.price .pri-title img{
+    padding-right: 0;
+    width: 29px;
+    height: 32px;
+}
+.pri-content{
+    width: 1920px;
+    height: 1342px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #fafafa;
+}
+.pri-wrap{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.pri-wrap img{
+    width: 1240px;
+    height: 1029px;
+    opacity: 0;
+    margin-top: -95px;
+    transition: 3s;
+}
+/* 창업 비용 끝 */
+
+/* 가맹점 상담 신청 시작 */
+.contact{
+    width: 1920px;
+    height: 804px;
+    background-color: #fff;
+}
+
+.contact input[type="text"]{
+    border: none;
+    outline: none;
+}
+.contact .con-title{
+    width: 1920px;
+    height: 204px;
+    font-size: 36px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.contact .con-title ul{
+    width: 1280px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact .con-title ul li{
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+.contact .con-title ul li a{
+    cursor: default;
+}
+
+.contact .con-title img{
+    padding-right: 0;
+    width: 29px;
+    height: 32px;
+}
+
+.con-content{
+    width: 1920px;
+    height: 1796px;
+    margin: 0 auto;
+    background-color: #fafafa;
+}
+.con-wrap{
+    width: 1280px;
+    margin: 0 auto;
+    padding-top: 111px;
+}
+
+.con-wrap input[type="text"]{
+    border-radius: 0px;
+    background-color: #e5e5e5;
+    border: 1px solid #cecece;
+    width: 130px; height: 28px;
+    color: #4b4b4b;
+}
+
+span.yellow-star{
+  color: #f6d76a;  
+}
+.store-chk{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    background-clip: content-box;
+    border: 2px solid #bbbbbb;
+    /* background-color: #e7e6e7; */
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.store-chk:checked{
+    background-color: #2c2c2c;
+    padding: 3px;
+}
+
+.con-wrap p{font-weight: 500;}
+
+.con-wrap table{
+    width: 1280px;
+    border-top: 2px solid #9a9a9a;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.con-wrap table tr{
+    width: 100%;
+    border-bottom: 1px solid #cecece;
+}
+
+.con-wrap table tr td:nth-child(2){
+    color: #4b4b4b;
+}
+
+.con-wrap table tr td{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.con-wrap table tr td:nth-child(1){
+    width: 300px;
+    height: 70px;
+    padding-left: 5px;
+}
+
+.con-wrap table tr:nth-child(1) input{
+    width: 400px;
+    height: 28px;
+}
+.con-wrap table tr:nth-child(2) select{
+    width: 130px;
+    height: 28px;
+    border-radius: 0;
+    border: 1px solid #cecece;
+    background : url("../images/eupcheonri/arrow_select.png") no-repeat 95% 50%;
+    background-color: #e5e5e5;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance : none;
+}
+
+.con-wrap table tr:nth-child(3) input{
+    margin-right: 10px;
+}
+.con-wrap table tr:nth-child(2) input{
+    width: 130px;
+    margin-left: 10px;
+}
+
+.con-wrap table tr:nth-child(6) textarea{
+    border: 1px solid #cecece;
+    outline: none;
+}
+
+.con-wrap table tr:nth-child(4) td span{
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.con-wrap table tr:nth-child(5) input{
+    margin-right: 10px;
+}
+
+.con-wrap table tr:nth-child(5) td input:nth-child(2){
+    width: 370px;
+}
+
+.con-wrap table tr:nth-child(6){
+    height: 200px;
+}
+
+.con-wrap table tr:nth-child(6) td:nth-child(1){
+    padding-bottom: 130px;
+}
+
+.con-wrap table tr:nth-child(6) textarea{
+    width: 65%;
+    height: 150px;
+    resize: none;
+    background-color: #e5e5e5;
+}
+
+.con-wrap table tr:nth-child(7) input{
+    background-color: #fff;
+    border: none;
+    width: 250px;
+}
+
+input #file-upload-button{
+    border-radius: none;
+    border: none;
+}
+
+.submit-btn{
+    width: 295px;
+    height: 236px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.submit-btn input{
+    margin-top: 60px;
+    margin-bottom: 80px;
+    width: 295px;
+    height: 76px;
+    border-radius: 38px;
+    background-color: #fff;
+    border: 2px solid #2c2c2c;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cash-img{
+    width: 1920px;
+    margin: 0 auto;
+    display: flex;
+}
+.cash-img img{
+    margin: 0 auto;
+}
+/* 가맹점 상담 신청 끝 */

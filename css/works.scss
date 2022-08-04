@@ -711,6 +711,10 @@ h2{
                         background-image: url(../images/themapark-pc.png);
                         // background-position: center center;
                     }
+                    &:hover::after{
+                        transition: 3s linear;
+                        background-position: center bottom;
+                    }
                 }
                 .tab{
                     &::after{
@@ -812,6 +816,8 @@ h2{
         }
     }
 
+
+// 세미네부엌
 .semi{
     .right{
         .top{
@@ -819,6 +825,10 @@ h2{
                 .pc{
                     &::after{
                         background-image: url(../images/semi.png);
+                    }
+                    &:hover::after{
+                        transition: 3.5s linear;
+                        background-position: center bottom;
                     }
                 }
             }
@@ -829,11 +839,17 @@ h2{
                     &:nth-child(1){
                         display: none;
                     }
+                    &:nth-child(2){
+                        @include mobile{
+                            margin-left: 33%;
+                        }
+                    }
                 }
             }
         }
     }
 }
+// 세미네부엌
 
 .together01{
     position: relative;
@@ -841,12 +857,16 @@ h2{
         position: absolute;
         right: 30px; bottom: 100px;
         width: 130px; height: 200px;
+        @include mobile{
+            bottom: 115px;
+        }
         button{
             position: absolute;
+            padding-right: 10px;
             width: 130px; height: 40px;
             border-radius: 10px;
             background-color: #ffe74c;
-            border: 1px solid #ccc;
+            border: 0;
             bottom: 0;
             z-index: 5;
             box-shadow: 0px 4px 8px 1px rgb(0 0 0 / 36%), inset 0px 4px 10.8px 2.2px rgb(73 73 73 / 11%);
@@ -855,6 +875,16 @@ h2{
                 box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
                 background-color: #6667ab;
                 color: #fff;
+                span{
+                    color: #fff;
+                }
+            }
+            span{
+                position: absolute;
+                right: 10px;
+                &:nth-child(2){
+                    display: none;
+                }
             }
         }
         .together_wrap{
@@ -864,13 +894,24 @@ h2{
             box-shadow: 0px 4px 8px 1px rgb(0 0 0 / 36%), inset 0px 4px 10.8px 2.2px rgb(73 73 73 / 11%);
             display: none;
             ul{
-                width: 129px; height: 90px; overflow: hidden; overflow-y: scroll;
+                width: 129px; height: 100px; overflow: hidden; overflow-y: scroll;
                 li{
-                    width: 129px; text-align: center;
+                    width: 100%;
+                    text-align: center;
                     height: 30px; line-height: 30px;
+                    &:nth-child(1),
+                    &:nth-child(7){
+                        color: #6667ab;
+                        margin-top: 10px;
+                    }
                     a{
                         display: inline-block;
                         width: 100%; height: 100%;
+                    }
+                    &:hover{
+                        a{
+                            color: #f81;
+                        }
                     }
                 }
             }
@@ -878,14 +919,17 @@ h2{
     }//button
 }
 
+// 빙그레
 .binggrae{
-    .right{
-        .top{
-            .mokup{
-                .pc{
-                    &::after{
-                        background-image: url(../images/binggrae.png);
-                    }
+        .mokup{
+            .pc{
+                &::after{
+                    background-image: url(../images/binggrae.png) !important;
+                    //바꾸려면 선택자는 무조건 위의 것과 같아줘야 하는데 !improtant를 사용하게 되면 같지않아도 괜찮다.
+                }
+                &:hover::after{
+                    transition: 3s linear;
+                    background-position: center bottom;
                 }
             }
         }
@@ -895,19 +939,58 @@ h2{
                     &:nth-child(1){
                         display: none;
                     }
+                    &:nth-child(2){
+                        @include mobile{
+                            margin-left: 33%;
+                        }
+                    }
+                }
+            }
+        }
+}
+// 빙그레
+
+// 배민
+.baemin{
+    .mokup{
+        .pc{
+            &::after{
+                background-image: url(../images/bamin.png) !important;
+                //바꾸려면 선택자는 무조건 위의 것과 같아줘야 하는데 !improtant를 사용하게 되면 같지않아도 괜찮다.
+            }
+            &:hover::after{
+                transition: 2s linear;
+                background-position: center bottom;
+            }
+        }
+    }
+    .bottom{
+        ul{
+            li{
+                &:nth-child(1){
+                    display: none;
+                }
+                &:nth-child(2){
+                    @include mobile{
+                        margin-left: 33%;
+                    }
                 }
             }
         }
     }
 }
+// 배민
+
+// 읍천리
 .eupcheonri{
-    .right{
-        .top{
-            .mokup{
-                .pc{
-                    &::after{
-                        background-image: url(../images/binggrae.png);
-                    }
+        .mokup{
+            .pc{
+                &::after{
+                    background-image: url(../images/eupcheonri-sub2.png) !important;
+                }
+                &:hover::after{
+                    transition: 3s linear !important;
+                    background-position: center bottom;
                 }
             }
         }
@@ -917,8 +1000,13 @@ h2{
                     &:nth-child(1){
                         display: none;
                     }
+                    &:nth-child(2){
+                        @include mobile{
+                            margin-left: 20%;
+                        }
+                    }
                 }
             }
         }
-    }
 }
+// 읍천리

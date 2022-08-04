@@ -26,9 +26,9 @@ $(document).ready(function(){
         }
         
         if(p > pos){
-            $(".top").removeClass("on")
-        }else{
             $(".top").addClass("on")
+        }else{
+            $(".top").removeClass("on")
         }
         console.log(p,pos)
         p = pos;

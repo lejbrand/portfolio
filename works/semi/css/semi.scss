@@ -1,5 +1,5 @@
 @charset "utf-8";
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; user-select: none;}
 ul{list-style: none;}
 a{text-decoration: none; color: #0a0a0a;}
 html, body{width: 100%; height: 100%;}
@@ -15,6 +15,29 @@ $t-width : 1360px;
 $s-width : 1130px;
 $m-color : #0A0A0A;
 $s-color : #424242;
+$mobile : 719px;
+$tab : 959px;
+
+@mixin tablet{
+    @media screen and (min-width: ($mobile+1)) and (max-width: $tab){
+    @content;
+    }
+}
+@mixin mobile{
+    @media screen and (max-width: $mobile){
+        @content;
+    }
+}
+
+// h2{
+//     font-size: 33px;
+//     @include tablet{
+//         font-size: 25px;
+//     }
+//     @include mobile{
+//         font-size: 28px;
+//     }
+// }
 
 
 // 네비게이션
@@ -114,7 +137,7 @@ $s-color : #424242;
 
 // 슬라이드
 .main-slide{
-    width: $t-width; height: 425px;
+    max-width: $t-width; height: auto;
     margin-top: 80px;
 
     .swiper-pagination-bullet{
@@ -126,7 +149,32 @@ $s-color : #424242;
         width: 30px; height: 12px;
     }
     .swiper-wrapper{
-        width: 100%; height: auto;
+        width: 100%; height: 100%;
+        .swiper-slide{
+            width: 100%; height: 100%;
+            a{
+                display: inline-block; width: 100%; height: 100%;
+                ul{
+                    li{
+                        img{
+                            width: 100%; height: 100%;
+                        }
+                        &:nth-child(2){display: none;}
+                        &:nth-child(3){display: none;}
+                        @include tablet{
+                            &:nth-child(1){display: none;}
+                            &:nth-child(2){display: block;}
+                            &:nth-child(3){display: none;}
+                        }
+                        @include mobile{
+                            &:nth-child(1){display: none;}
+                            &:nth-child(2){display: none;}
+                            &:nth-child(3){display: block;}
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 // 슬라이드
@@ -134,24 +182,40 @@ $s-color : #424242;
 //오늘의 부엌
 .today{
     width: 100%; height: 408.8px; margin-top: 80px;
+    @include tablet{
+        width: 90%;
+        margin-top: 5rem; 
+        margin-left: 5%; margin-right: 5%;
+    }
     .today-wrap{
         max-width: $s-width; height: 100%;
         margin: 0 auto;
+        @include tablet{width: 100%;}
         h2{
             margin-bottom: 20px; color: $m-color;
+            @include tablet{
+                margin-bottom: 2rem;
+            }
         }
         .semi{
             height: 352.8px; width: 100%; 
-            display: grid;
-            grid-template-columns: repeat(4,269px);
-            grid-template-rows: 100%;
-            grid-gap: 20px;
+            display: flex; justify-content: space-between;
+            box-sizing: border-box;
+            @include tablet{
+                display: flex;
+                margin-left: -5px; margin-right: -5px;
+                background-color: #4ac;
+            }
             .semi-card{
+                width: 24%; margin-left: 5px; margin-right: 5px;
+                @include tablet{
+                    width: calc(25%-10px);
+                }
                 >a{
                     .img{
-                        width: 269px; height: 269px; border-radius: 20px; overflow: hidden;
+                        max-width: 269px; height: 269px; border-radius: 20px; overflow: hidden;
                         img{
-                            width: 100%; height: auto;
+                            max-width: 100%; height: auto;
                             transition: 0.3s;
                             &:hover{
                                 transform: scale(1.1);
@@ -161,6 +225,9 @@ $s-color : #424242;
                     .text{
                         width: 249px; height: 29px; line-height: 29px; margin-top: 5px;
                         font-weight: 700;
+                        @include tablet{
+                            max-height: 52px;
+                        }
                     }
                 }
                 .icon{

@@ -17,7 +17,7 @@ $(document).ready(function(){
     $(".slide .slide-mobile .text ul li").eq(0).addClass("color")
     $(".slide .slide-mobile .content .artwork").eq(0).show()
     
-    for(let k = 0; k < 3; k++){
+    for(let k = 0; k < 7; k++){
         $(".section").eq(k).find($button).eq(0).addClass("color")    
         //한덩이리씩 내려가는 것들은 반복문을 돌려줘야지 작동을 제대로 한다. 
         // section이 k라는 위치에 내려가게 되면 $button을 찾아서 eq(0)에 색을 주라는 의미
@@ -359,6 +359,7 @@ $(document).ready(function(){
         "",
         "",
         "",
+        "",
         "http://via.placeholder.com/1200x5000/4ac",
         "http://via.placeholder.com/1200x5000"
     ]
@@ -425,6 +426,8 @@ document.documentElement.addEventListener('touchend', function (event) {
 // 버튼클릭
 $(".together01 .button_together button").click(function(){
     $(".together01 .button_together .together_wrap").slideToggle()
+    $(".together01 .button_together button span").eq(0).toggle()
+    $(".together01 .button_together button span").eq(1).toggle()
 })
 // 버튼클릭
 
