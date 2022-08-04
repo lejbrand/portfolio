@@ -835,9 +835,8 @@ h2{
         }
         .bottom{
             ul{
-                @include mobile{
-                    display: flex; justify-content: center;
-                }
+                width: 100%;
+                display: flex; justify-content: center;
                 li{
                     &:nth-child(1){
                         display: none;
@@ -933,9 +932,8 @@ h2{
         }
         .bottom{
             ul{
-                @include mobile{
-                    display: flex; justify-content: center;
-                }
+                width: 100%;
+                display: flex; justify-content: center;
                 li{
                     &:nth-child(1){
                         display: none;
@@ -967,9 +965,8 @@ h2{
     }
     .bottom{
         ul{
-            @include mobile{
-                display: flex; justify-content: center;
-            }
+            width: 100%;
+            display: flex; justify-content: center;
             li{
                 &:nth-child(1){
                     display: none;
