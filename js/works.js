@@ -360,7 +360,7 @@ $(document).ready(function(){
         "",
         "",
         "",
-        "http://via.placeholder.com/1200x5000/4ac",
+        "images/themapark guide.png",
         "http://via.placeholder.com/1200x5000"
     ]
     // 디자인 가이드 창
