@@ -148,7 +148,14 @@ html,body{width: 100%; height: 100%;}
     position: absolute;
     left: 50%; top: 45%;
     transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: #fff;
 }
+
+.icon .icon-wrap .box a img:hover{
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
 .icon .icon-wrap .box P{
     font-size: 16px;
     position: absolute;

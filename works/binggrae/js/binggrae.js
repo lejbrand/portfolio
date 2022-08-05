@@ -119,12 +119,26 @@ $("document").ready(function(){
 
 // 해피 스와이퍼
 var swiper = new Swiper(".happy-swiper", {
-    slidesPerView: 6,
-    spaceBetween: 30,
-    navigation: {
-        nextEl: ".happy .swiper-button-next",
-        prevEl: ".happy .swiper-button-prev",
-    },
+    slidesPerView: 3,
+    spaceBetween: 10,
+    slidesPerGroup: 2,
+            grid: {
+                rows: 2,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+    breakpoints: {
+        768:{
+            slidesPerView: 6,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".happy .swiper-button-next",
+                prevEl: ".happy .swiper-button-prev",
+            },
+        }
+    }
 });
 
 // 해피 스와이퍼

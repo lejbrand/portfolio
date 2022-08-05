@@ -200,23 +200,24 @@ $tab : 959px;
         .semi{
             height: 352.8px; width: 100%; 
             display: flex; justify-content: space-between;
+            flex-wrap: wrap;
             box-sizing: border-box;
             @include tablet{
-                display: flex;
-                margin-left: -5px; margin-right: -5px;
-                background-color: #4ac;
+                margin-left: 5px; margin-right: 5px;
+                background-color: orange;
             }
             .semi-card{
                 width: 24%; margin-left: 5px; margin-right: 5px;
                 @include tablet{
-                    width: calc(25%-10px);
+                    width: 23.5%; 
                 }
                 >a{
                     .img{
-                        max-width: 269px; height: 269px; border-radius: 20px; overflow: hidden;
+                        max-width: 269px; height: 269px; overflow: hidden;
+                        background-color: #4ac;
                         img{
                             max-width: 100%; height: auto;
-                            transition: 0.3s;
+                            transition: 0.3s; border-radius: 20px;
                             &:hover{
                                 transform: scale(1.1);
                             }
@@ -265,25 +266,49 @@ $tab : 959px;
 .worry{
     width: 100%; height: 643px;
     margin-top: 80px;
+    @include tablet{
+        width: 90%;
+        margin-top: 5rem; 
+        margin-left: 5%; margin-right: 5%; height: 100%;
+    }
     &-wrap{
         max-width: $s-width; margin: 0 auto; height: 643.375px;
+        @include tablet{ height: 100%;}
         h2{
             margin-bottom: 20px;
+            @include tablet{
+                margin-bottom: 2rem;
+            }
         }
         .top-worry{
             height: 381.38px; width: 100%;
             border-radius: 30px; overflow: hidden;
             margin-bottom: 20px;
+            @include tablet{
+                margin-bottom: 1rem; height: 700px;
+            }
             a{
                 display: inline-block;
                 width: 100%; height: 100%;
+                @include tablet{
+                    overflow: hidden;
+                    padding-bottom: 15rem; background-color: #f8f3f3;
+                    border-radius: 16px; height: 100%;
+                }
                 .img{
                     float: left;
                     width: 666.69px; height: 100%;
                     overflow: hidden;
+                    @include tablet{
+                        padding-top: 56.25%; position: relative; border-radius: 16px;
+                        width: 100%;
+                    }
                     img{
                         width: 100%; height: auto;
                         transition: 0.2s;
+                        @include tablet{
+                            position: absolute; top: 0; left: 0; width: 100%; height: auto;
+                        }
                     }
                 }
                 .text{
@@ -294,6 +319,9 @@ $tab : 959px;
                     padding: 62.141px 60px 62.141px;
                     font-size: 20px;
                     font-weight: 700; letter-spacing: -2px;
+                    @include tablet{
+                        padding-top: 2rem;
+                    }
                     >ul{
                         width: 100%; height: 100%; position: relative;
                         >li{
@@ -301,6 +329,7 @@ $tab : 959px;
                                 margin-top: 20px;
                                 width: 100%; height: 43px;
                                 font-weight: normal;
+                                @include tablet{bottom: 100px;}
                                 ul{
                                     display: grid;
                                     grid-template-columns: repeat(2,45px);
@@ -354,6 +383,7 @@ $tab : 959px;
             grid-template-columns: repeat(4,269px);
             grid-template-rows: 186px;
             grid-gap: 20px;
+            
 
             .semi-worry{
                 display: block;
@@ -402,6 +432,11 @@ $tab : 959px;
 // 함께요리
 .together{
     width: 100%; height: 893.984px; margin-top: 80px;
+    @include tablet{
+        width: 90%;
+        margin-top: 5rem; 
+        margin-left: 5%; margin-right: 5%;
+    }
     .together-wrap{
         max-width: $s-width; margin: 0 auto; height: 100%;
         .img-wrap{
@@ -468,6 +503,10 @@ $tab : 959px;
 // 이벤트
 .event{
     width: 100%; height: 279.09px; margin-top: 80px; padding-bottom: 80px;
+    @include tablet{
+        width: 90%;
+        margin: 5rem 5%;
+    }
     .event-wrap{
         max-width: $s-width; margin: 0 auto;
         display: grid;

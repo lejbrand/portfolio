@@ -10,6 +10,8 @@ $(document).ready(function(){
         }
     });
 
+    $(".top").addClass("on")
+
     $(".footer .footer-wrap .footer-top .family button").click(function(){
         $(".familt-wrap").fadeToggle()
         $(".family .button").toggleClass("on")
